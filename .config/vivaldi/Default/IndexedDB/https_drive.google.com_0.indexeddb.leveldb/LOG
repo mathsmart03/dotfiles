@@ -1,0 +1,18 @@
+2021/10/22-09:54:08.633 6d58 Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/10/22-09:54:08.634 6d58 Recovering log #3
+2021/10/22-09:54:08.649 6d58 Reusing old log /home/rejyr/.config/vivaldi/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000003.log 
+2021/10/22-09:56:24.167 74f0 Level-0 table #5: started
+2021/10/22-09:56:24.188 74f0 Level-0 table #5: 4058618 bytes OK
+2021/10/22-09:56:24.191 74f0 Delete type=0 #3
+2021/10/22-12:41:48.514 b499 Level-0 table #7: started
+2021/10/22-12:41:48.520 b499 Level-0 table #7: 604107 bytes OK
+2021/10/22-12:41:48.523 b499 Delete type=0 #4
+2021/10/22-12:41:48.523 b499 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/10/22-12:41:48.524 b499 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x03\x03\x01'\x008\x00d\x000\x006\x00a\x003\x000\x000\x00a\x005\x009\x00f\x002\x009\x009\x00b\x004\x00d\x00b\x003\x00f\x00a\x009\x00f\x00f\x004\x00b\x004\x006\x00c\x00a\x003\x00_\x003\x00_\x002\x00:\x000\x000' @ 3151 : 1
+2021/10/22-12:41:48.524 b499 Compacting 1@1 + 1@2 files
+2021/10/22-12:41:48.534 b499 Generated table #8@1: 145 keys, 279714 bytes
+2021/10/22-12:41:48.534 b499 Compacted 1@1 + 1@2 files => 279714 bytes
+2021/10/22-12:41:48.536 b499 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/10/22-12:41:48.536 b499 Delete type=2 #5
+2021/10/22-12:41:48.536 b499 Delete type=2 #7
+2021/10/22-12:41:48.538 b499 Manual compaction at level-1 from '\x00\x01\x03\x03\x01'\x008\x00d\x000\x006\x00a\x003\x000\x000\x00a\x005\x009\x00f\x002\x009\x009\x00b\x004\x00d\x00b\x003\x00f\x00a\x009\x00f\x00f\x004\x00b\x004\x006\x00c\x00a\x003\x00_\x003\x00_\x002\x00:\x000\x000' @ 3151 : 1 .. (end); will stop at (end)

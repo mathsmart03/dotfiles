@@ -1,0 +1,13 @@
+2021/10/21-10:21:17.262 bc15 Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/IndexedDB/https_www.blooket.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/10/21-10:21:17.263 bc15 Recovering log #7
+2021/10/21-10:21:17.263 bc15 Reusing old log /home/rejyr/.config/vivaldi/Default/IndexedDB/https_www.blooket.com_0.indexeddb.leveldb/000007.log 
+2021/10/21-10:21:17.326 bc16 Level-0 table #11: started
+2021/10/21-10:21:17.329 bc16 Level-0 table #11: 2221 bytes OK
+2021/10/21-10:21:17.331 bc16 Delete type=0 #7
+2021/10/21-10:21:17.331 bc16 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at '\x00\x05\x00\x00\x05' @ 203 : 1
+2021/10/21-10:21:17.331 bc16 Compacting 1@0 + 1@1 files
+2021/10/21-10:21:17.334 bc16 Generated table #12@0: 25 keys, 1667 bytes
+2021/10/21-10:21:17.334 bc16 Compacted 1@0 + 1@1 files => 1667 bytes
+2021/10/21-10:21:17.335 bc16 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/10/21-10:21:17.336 bc16 Delete type=2 #11
+2021/10/21-10:21:17.336 bc16 Manual compaction at level-0 from '\x00\x05\x00\x00\x05' @ 203 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)

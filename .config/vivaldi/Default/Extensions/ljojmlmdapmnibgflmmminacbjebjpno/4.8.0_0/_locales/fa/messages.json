@@ -1,0 +1,320 @@
+{
+   "activateLabel": {
+      "message": "فعال کنید"
+   },
+   "activateLicenseButtonLabel": {
+      "message": "یا مجوز را فعال کنید"
+   },
+   "activeTabDesc": {
+      "message": "برای یافتن برگه فعال Meet بر روی نماد برنامه افزودنی کلیک کنید"
+   },
+   "activeTabLabel": {
+      "message": "Tab Active Meet را پیدا کنید"
+   },
+   "alwaysShowLabel": {
+      "message": "همیشه نام شرکت کنندگان را نشان دهید"
+   },
+   "attendanceDesc": {
+      "message": "حضور در جلسه را ضبط کنید و به CSV صادر کنید"
+   },
+   "attendanceLabel": {
+      "message": "حضور بیابید"
+   },
+   "autoAdmitDesc": {
+      "message": "ورود تازه واردان به Meet را به صورت خودکار پذیرفته است"
+   },
+   "autoAdmitLabel": {
+      "message": "ورود تازه واردان به صورت خودکار"
+   },
+   "autoFullScreenDesc": {
+      "message": "وقتی شخصی در حال ارائه است ، تمام صفحه را به صورت خودکار بروید"
+   },
+   "autoFullScreenLabel": {
+      "message": "تمام صفحه خودکار"
+   },
+   "autoJoinDesc": {
+      "message": "به طور خودکار به جلسه بپیوندید"
+   },
+   "autoJoinDescOption": {
+      "message": "فقط در صورت حضور شرکت کنندگان به جلسه بپیوندید"
+   },
+   "autoJoinLabel": {
+      "message": "پیوستن خودکار"
+   },
+   "autoMinimizeDesc": {
+      "message": "هنگام پیوستن به جلسه ، ویدیوی خود را به حداقل برسانید"
+   },
+   "autoMinimizeLabel": {
+      "message": "به حداقل رساندن خودکار ویدئو"
+   },
+   "autoMuteDesc": {
+      "message": "میکروفن را به صورت خودکار قطع کنید"
+   },
+   "autoMuteLabel": {
+      "message": "بی صدا کردن خودکار"
+   },
+   "autoRecordDesc": {
+      "message": "شروع به صورت خودکار ضبط Meet (فضای کاری Google لازم است)"
+   },
+   "autoRecordDescOne": {
+      "message": "ضبط را به صورت خودکار شروع کنید"
+   },
+   "autoRecordDescTwo": {
+      "message": "ضبط را به صورت دستی شروع کنید"
+   },
+   "autoRecordLabel": {
+      "message": "ضبط خودکار"
+   },
+   "autoRejectDesc": {
+      "message": "ورود تازه وارد به نشست را به طور خودکار انکار می کند"
+   },
+   "autoRejectLabel": {
+      "message": "ورود جدید به طور خودکار را انکار کنید"
+   },
+   "autoUnmuteDesc": {
+      "message": "جلوی بی صدا کردن میکروفن دیگران را بگیرید"
+   },
+   "autoUnmuteLabel": {
+      "message": "لغو خودکار"
+   },
+   "autoVideoDesc": {
+      "message": "برای خاموش کردن پیوستن ، فیلم را تنظیم کنید"
+   },
+   "autoVideoLabel": {
+      "message": "خاموش فیلم خودکار"
+   },
+   "basicFeatures": {
+      "message": "ویژگی های اساسی"
+   },
+   "bgColorDesc": {
+      "message": "رنگ زمینه سفارشی را در Meet تنظیم کنید"
+   },
+   "bgColorLabel": {
+      "message": "رنگ پس زمینه را تنظیم کنید"
+   },
+   "captionsDesc": {
+      "message": "زیرنویس ها را به صورت خودکار روشن کنید"
+   },
+   "captionsLabel": {
+      "message": "زیرنویس های خودکار"
+   },
+   "chimesDesc": {
+      "message": "همیشه هنگام پیوستن و ترک شرکت کنندگان ، یا دریافت پیام گپ جدید ، صداهای زنگی را بشنوید"
+   },
+   "chimesLabel": {
+      "message": "همیشه Chimes را بازی کنید"
+   },
+   "copyUrlDesc": {
+      "message": "به طور خودکار کپی کردن URL Meet در کلیپ بورد"
+   },
+   "copyUrlLabel": {
+      "message": "کپی خودکار URL ملاقات"
+   },
+   "darkModeDesc": {
+      "message": "حالت Google Dark را تاریک می کند"
+   },
+   "darkModeLabel": {
+      "message": "حالت تاریک"
+   },
+   "desktopApp": {
+      "message": "برنامه دسک تاپ"
+   },
+   "desktopDesc": {
+      "message": "تمام پیوندهای Google Cal را در. باز کنید"
+   },
+   "desktopLabel": {
+      "message": "پیوندهای Meet را در برنامه دسک تاپ باز کنید"
+   },
+   "displayClockDesc": {
+      "message": "ساعت را حتی در حالت تمام صفحه نشان ندهید"
+   },
+   "displayClockLabel": {
+      "message": "نمایش ساعت"
+   },
+   "doNotDisturbCommentsBubbleDesc": {
+      "message": "پنهان کردن حباب اعلان نظر"
+   },
+   "doNotDisturbCommentsDesc": {
+      "message": "پنهان کردن نظرات و پیوستن کاربر به پنجره های بازشو"
+   },
+   "doNotDisturbDesc": {
+      "message": "بی صدا کردن همه صداهای اعلان Meet ، نظر جدید را پنهان کنید"
+   },
+   "doNotDisturbLabel": {
+      "message": "مزاحم نشوید"
+   },
+   "doNotDisturbSoundsDesc": {
+      "message": "بی صدا کردن همه صداهای اطلاع رسانی Meet"
+   },
+   "emojiToolTipDesc": {
+      "message": "این ویژگی به طور پیش فرض روشن است و می توانید از پنجره گپ در Google Meet به آن دسترسی پیدا کنید"
+   },
+   "extDesc": {
+      "message": "40 ویژگی جدید برای Google Meet مانند بی صدا کردن همه ، حذف همه ، پذیرش خودکار ، شکلک ها ، آینه فیلم ها ، رنگ پس زمینه و فشار دادن برای صحبت کردن!"
+   },
+   "extName": {
+      "message": "Google Meet Enhancement Suite"
+   },
+   "generalToolTipDesc": {
+      "message": "این ویژگی به طور پیش فرض روشن است و می توانید از منوی شرکت کنندگان در Google Meet به آن دسترسی پیدا کنید"
+   },
+   "hideAddOthersDesc": {
+      "message": "هنگام عضویت در Meet ، پنجره بازشو &quot;افزودن دیگران&quot; را پنهان می کند"
+   },
+   "hideAddOthersLabel": {
+      "message": "پاپ آپ &quot;افزودن دیگران&quot; را مخفی کنید"
+   },
+   "hidePartNames": {
+      "message": "نام شرکت کنندگان را مخفی کنید"
+   },
+   "hideSpeakingIcons": {
+      "message": "پنهان کردن نمادهای گفتاری شرکت کنندگان"
+   },
+   "hideTopBarDesc": {
+      "message": "وقتی نوار پایین ناپدید شد ، نوار بالایی را مخفی کنید"
+   },
+   "hideTopBarLabel": {
+      "message": "پنهان کردن خودکار نوار بالا"
+   },
+   "leaveConfirmDesc": {
+      "message": "هنگام ترک جلسه بخواهید تأیید کنید"
+   },
+   "leaveConfirmLabel": {
+      "message": "تایید را ترک کنید"
+   },
+   "meetProButtonLabel": {
+      "message": "امروز با Meet Pro آشنا شوید"
+   },
+   "meetProSectionDesc": {
+      "message": "با به روزرسانی در Meet Pro ، به بیش از 20 ویژگی جدید دسترسی پیدا می کنید که Google Meet را به سطح بالاتری می رساند."
+   },
+   "meetProSectionLabel": {
+      "message": "Get Meet Pro را دریافت کنید"
+   },
+   "meetVolumeDesc": {
+      "message": "سطح صدای Meet را تنظیم کنید"
+   },
+   "meetVolumeLabel": {
+      "message": "تنظیم میزان صدای Meet"
+   },
+   "mirrorVideosDesc": {
+      "message": "تمام فیلم های Meet را منعکس می کند"
+   },
+   "mirrorVideosLabel": {
+      "message": "آینه فیلم ها"
+   },
+   "muchMore": {
+      "message": "خیلی بیشتر برای آمدن!"
+   },
+   "muteAllDesc": {
+      "message": "همه شرکت کنندگان را از طریق منوی شرکت کنندگان بی صدا کنید"
+   },
+   "muteAllLabel": {
+      "message": "همه را بی صدا کنید"
+   },
+   "mutePopupDesc": {
+      "message": "پنهان می کند &quot;آیا شما صحبت می کنید؟&quot; پنجره هنگام قطع شدن"
+   },
+   "mutePopupLabel": {
+      "message": "پنهان کردن پنجره بی صدا"
+   },
+   "partVidStyleLabel": {
+      "message": "سبک ویدیویی شرکت کننده"
+   },
+   "pinBarDesc": {
+      "message": "نوار کنترل را به پایین صفحه پین کنید"
+   },
+   "pinBarLabel": {
+      "message": "نوار پایین پین"
+   },
+   "pinChatDesc": {
+      "message": "هنگام پیوستن به Meet ، به طور خودکار نمای چت را پین می کند"
+   },
+   "pinChatLabel": {
+      "message": "پین کردن خودکار چت"
+   },
+   "pipDesc": {
+      "message": "مشاهده فیلم شرکت کنندگان در تصویر در تصویر"
+   },
+   "pipLabel": {
+      "message": "تصویر در تصویر"
+   },
+   "proFeaturesSubHeading": {
+      "message": "ویژگی های حرفه ای"
+   },
+   "pttDesc": {
+      "message": "کلید میانبر را نگه دارید تا بی صدا شود"
+   },
+   "pttLabel": {
+      "message": "فشار به صحبت"
+   },
+   "pttUpgrade": {
+      "message": "برای تنظیم صحافی کلید خود ، به Pro ارتقا دهید"
+   },
+   "quickEmojiDesc": {
+      "message": "میانبرهای سریع شکلک را به پنجره گپ اضافه می کند"
+   },
+   "quickEmojiLabel": {
+      "message": "واکنش های ایموجی سریع"
+   },
+   "quickLeaveDesc": {
+      "message": "برای برقراری تماس از کلید میانبر استفاده کنید"
+   },
+   "quickLeaveLabel": {
+      "message": "ترک سریع"
+   },
+   "removeAllDesc": {
+      "message": "همه شرکت کنندگان را از طریق منوی شرکت کنندگان حذف کنید"
+   },
+   "removeAllLabel": {
+      "message": "حذف همه"
+   },
+   "returnHomeDesc": {
+      "message": "پس از خروج از Meet ، به صفحه اصلی Meet بازگشت"
+   },
+   "returnHomeLabel": {
+      "message": "در هنگام قطع تماس به صفحه اصلی"
+   },
+   "seeFeatures": {
+      "message": "برای دیدن تمام ویژگی هایی که ما برنامه ریزی کرده ایم"
+   },
+   "sortParticipantsDesc": {
+      "message": "ضامن را برای مرتب سازی بر اساس نام خانوادگی به لیست شرکت کنندگان اضافه می کند"
+   },
+   "sortParticipantsLabel": {
+      "message": "مرتب سازی لیست شرکت کنندگان"
+   },
+   "speakerBorderDesc": {
+      "message": "حاشیه ای را برای شرکت کنندگان سخنران اضافه می کند"
+   },
+   "speakerBorderLabel": {
+      "message": "برجسته بلندگو"
+   },
+   "startMeet": {
+      "message": "شروع یک ملاقات"
+   },
+   "timerDesc": {
+      "message": "تایمر جلسه را در نوار برگه پایین نمایش می دهد"
+   },
+   "timerLabel": {
+      "message": "تایمر جلسه"
+   },
+   "title": {
+      "message": "با مجموعه Enhancement آشنا شوید"
+   },
+   "toggleBarDesc": {
+      "message": "نوار کنترل پایین را لمس کنید تا ظاهر شود"
+   },
+   "toggleBarLabel": {
+      "message": "نوار پایین را تغییر دهید"
+   },
+   "transBarDesc": {
+      "message": "میله پایین را شفاف کنید"
+   },
+   "transBarLabel": {
+      "message": "نوار شفاف"
+   },
+   "viewRoadmap": {
+      "message": "نقشه راه ما را مشاهده کنید"
+   }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="44px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="95.4620423%" x2="43.4411381%" y2="41.0812384%" id="linearGradient-1">
+            <stop stop-color="#FC9C3C" offset="0%"></stop>
+            <stop stop-color="#F8E71C" offset="100%"></stop>
+        </linearGradient>
+        <path d="M16,30.9230769 L8.74740932,39.0822414 C8.72137833,39.1115263 8.6936487,39.1392559 8.66436384,39.1652869 C8.25158107,39.5322049 7.6195087,39.4950242 7.25259068,39.0822414 L0,30.9230769 L0,0.923076923 L16,0.923076923 L16,30.9230769 Z" id="path-2"></path>
+        <linearGradient x1="50%" y1="60.5137651%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#2D0186" offset="0%"></stop>
+            <stop stop-color="#BD10E0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#F01ABA" offset="0%"></stop>
+            <stop stop-color="#BD10E0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13.5,27 C20.9558441,27 27,20.9558441 27,13.5 C27,6.04415588 20.9558441,1.77635684e-15 13.5,1.77635684e-15 C10,1.77635684e-15 6.5,1.77635684e-15 3,1.77635684e-15 L3,2.22044605e-15 C1.34314575,2.52480524e-15 2.41183085e-16,1.34314575 4.4408921e-16,3 C0,6.5 0,10 0,13.5 C0,20.9558441 6.04415588,27 13.5,27 Z" id="path-6"></path>
+        <linearGradient x1="33.31604%" y1="41.7371962%" x2="33.31604%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#D916CB" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#4404CC" stop-opacity="0.422101449" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <path d="M21.7733236,39.7711448 C21.2633253,41.835941 19.8504573,43.2253418 18.2607845,43.2253418 L15.3399209,43.2253418 C13.2917325,43.2253418 17.6941341,43.2253418 8.45629883,43.2253418 C8.22998047,43.2253418 8.22998047,37.6099447 8.45629883,26.3791504 L17.0007324,26.3791504 L21.5900251,7.38741626 C22.0741945,5.38379236 23.8770612,3.97939301 25.9382489,4.00023161 L25.9382489,4.00023161 C28.0058285,4.02113483 29.7920031,5.45087308 30.2651583,7.46369368 L33.6734302,21.9626146 L37.397128,6.36345704 C37.6535954,5.28907432 38.7324627,4.62602301 39.8068454,4.88249049 C39.9286105,4.91155722 40.0473777,4.9519922 40.1615832,5.0032631 L43.4962947,6.50033222 C44.3727285,6.89379415 44.8455866,7.85482997 44.6225234,8.78927704 L37.9898063,36.5747752 C37.5099548,38.5849489 35.7103822,40.0009882 33.6437388,39.9945885 L33.6437388,39.9945885 C31.5758375,39.9881848 29.7827097,38.5631682 29.3095028,36.5501277 L25.8425529,21.8015878 L21.7733236,39.7711448 Z" id="Path-4" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            <g id="Group">
+                <g id="Oval" transform="translate(0.000000, 4.076923)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#4404CC" fill-rule="nonzero" xlink:href="#path-2"></use>
+                    <path d="M12.7420814,26.3846154 C19.7793387,26.3846154 25.4841629,20.3232397 25.4841629,12.8461538 C25.4841629,5.369068 19.7793387,-0.692307692 12.7420814,-0.692307692 C10.1831645,-0.692307692 5.93580399,-0.692307692 0,-0.692307692 C0,6.06745872 0,10.5802792 0,12.8461538 C0,20.3232397 5.70482418,26.3846154 12.7420814,26.3846154 Z" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-3)"></path>
+                </g>
+                <g id="Rectangle-3">
+                    <mask id="mask-7" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-5)" fill-rule="nonzero" xlink:href="#path-6"></use>
+                    <rect fill="url(#linearGradient-8)" fill-rule="nonzero" mask="url(#mask-7)" x="0" y="0" width="16" height="27"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

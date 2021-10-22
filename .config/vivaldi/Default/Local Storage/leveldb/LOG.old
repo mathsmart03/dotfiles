@@ -1,0 +1,72 @@
+2021/10/21-20:19:08.962 3 Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/Local Storage/leveldb/MANIFEST-000001
+2021/10/21-20:19:08.965 3 Recovering log #240
+2021/10/21-20:19:08.966 3 Reusing old log /home/rejyr/.config/vivaldi/Default/Local Storage/leveldb/000240.log 
+2021/10/21-20:19:44.615 3 Level-0 table #244: started
+2021/10/21-20:19:44.625 3 Level-0 table #244: 172694 bytes OK
+2021/10/21-20:19:44.628 3 Delete type=0 #240
+2021/10/21-20:24:09.533 3 Level-0 table #246: started
+2021/10/21-20:24:09.541 3 Level-0 table #246: 161119 bytes OK
+2021/10/21-20:24:09.545 3 Delete type=0 #243
+2021/10/21-20:34:09.532 3 Level-0 table #248: started
+2021/10/21-20:34:09.543 3 Level-0 table #248: 19002 bytes OK
+2021/10/21-20:34:09.547 3 Delete type=0 #245
+2021/10/21-20:34:09.548 3 Compacting 4@0 + 1@1 files
+2021/10/21-20:34:09.565 3 Generated table #249@0: 559 keys, 1485450 bytes
+2021/10/21-20:34:09.565 3 Compacted 4@0 + 1@1 files => 1485450 bytes
+2021/10/21-20:34:09.566 3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/10/21-20:34:09.568 3 Delete type=2 #241
+2021/10/21-20:34:09.568 3 Delete type=2 #244
+2021/10/21-20:34:09.568 3 Delete type=2 #246
+2021/10/21-20:34:09.568 3 Delete type=2 #248
+2021/10/21-20:34:09.568 3 Delete type=2 #239
+2021/10/21-20:52:09.532 c Level-0 table #251: started
+2021/10/21-20:52:09.542 c Level-0 table #251: 18859 bytes OK
+2021/10/21-20:52:09.545 c Delete type=0 #247
+2021/10/21-21:21:13.088 1e Level-0 table #253: started
+2021/10/21-21:21:13.098 1e Level-0 table #253: 17603 bytes OK
+2021/10/21-21:21:33.110 1e Delete type=0 #250
+2021/10/21-21:50:00.167 1e Level-0 table #255: started
+2021/10/21-21:50:00.174 1e Level-0 table #255: 17625 bytes OK
+2021/10/21-21:50:00.177 1e Delete type=0 #252
+2021/10/21-22:19:27.499 3b Level-0 table #257: started
+2021/10/21-22:19:27.503 3b Level-0 table #257: 17582 bytes OK
+2021/10/21-22:19:47.525 3b Delete type=0 #254
+2021/10/21-22:19:47.526 3b Compacting 4@0 + 1@1 files
+2021/10/21-22:19:47.555 3b Generated table #258@0: 651 keys, 1487491 bytes
+2021/10/21-22:19:47.556 3b Compacted 4@0 + 1@1 files => 1487491 bytes
+2021/10/21-22:19:47.557 3b compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/10/21-22:19:47.558 3b Delete type=2 #255
+2021/10/21-22:19:47.559 3b Delete type=2 #249
+2021/10/21-22:19:47.559 3b Delete type=2 #257
+2021/10/21-22:19:47.559 3b Delete type=2 #251
+2021/10/21-22:19:47.559 3b Delete type=2 #253
+2021/10/21-22:48:14.317 1e Level-0 table #260: started
+2021/10/21-22:48:14.326 1e Level-0 table #260: 17597 bytes OK
+2021/10/21-22:48:34.339 1e Delete type=0 #256
+2021/10/21-23:17:21.180 1e Level-0 table #262: started
+2021/10/21-23:17:21.183 1e Level-0 table #262: 17601 bytes OK
+2021/10/21-23:17:21.187 1e Delete type=0 #259
+2021/10/21-23:46:28.341 69 Level-0 table #264: started
+2021/10/21-23:46:28.347 69 Level-0 table #264: 17566 bytes OK
+2021/10/21-23:46:28.350 69 Delete type=0 #261
+2021/10/22-01:34:14.033 81 Level-0 table #266: started
+2021/10/22-01:34:14.040 81 Level-0 table #266: 16123 bytes OK
+2021/10/22-01:34:14.044 81 Delete type=0 #263
+2021/10/22-01:34:34.061 81 Compacting 4@0 + 1@1 files
+2021/10/22-01:34:34.084 81 Generated table #267@0: 651 keys, 1487184 bytes
+2021/10/22-01:34:34.085 81 Compacted 4@0 + 1@1 files => 1487184 bytes
+2021/10/22-01:34:34.086 81 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/10/22-01:34:34.087 81 Delete type=2 #260
+2021/10/22-01:34:34.087 81 Delete type=2 #262
+2021/10/22-01:34:34.087 81 Delete type=2 #264
+2021/10/22-01:34:34.087 81 Delete type=2 #258
+2021/10/22-01:34:34.087 81 Delete type=2 #266
+2021/10/22-05:52:15.657 c9 Level-0 table #269: started
+2021/10/22-05:52:15.663 c9 Level-0 table #269: 6681 bytes OK
+2021/10/22-05:52:15.666 c9 Delete type=0 #265
+2021/10/22-06:27:09.532 c9 Level-0 table #271: started
+2021/10/22-06:27:09.543 c9 Level-0 table #271: 162099 bytes OK
+2021/10/22-06:27:09.546 c9 Delete type=0 #268
+2021/10/22-07:13:10.210 fb Level-0 table #273: started
+2021/10/22-07:13:10.218 fb Level-0 table #273: 12745 bytes OK
+2021/10/22-07:13:10.230 fb Delete type=0 #270

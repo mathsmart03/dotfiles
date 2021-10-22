@@ -1,0 +1,6 @@
+2021/10/20-10:31:38.439 344a Creating DB /home/rejyr/.config/vivaldi/Default/IndexedDB/https_quizlet.com_0.indexeddb.leveldb since it was missing.
+2021/10/20-10:31:38.445 344a Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/IndexedDB/https_quizlet.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/10/20-10:42:26.521 42bd Level-0 table #5: started
+2021/10/20-10:42:26.524 42bd Level-0 table #5: 3449 bytes OK
+2021/10/20-10:42:26.527 42bd Delete type=0 #3
+2021/10/20-10:42:26.527 42bd Manual compaction at level-0 from (begin) .. (end); will stop at (end)

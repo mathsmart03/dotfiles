@@ -1,0 +1,14 @@
+2021/10/22-07:38:00.507 a48 Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/IndexedDB/chrome-extension_oeopbcgkkoapgobdbedcemjljbihmemj_0.indexeddb.leveldb/MANIFEST-000001
+2021/10/22-07:38:00.509 a48 Recovering log #19
+2021/10/22-07:38:00.681 a48 Reusing old log /home/rejyr/.config/vivaldi/Default/IndexedDB/chrome-extension_oeopbcgkkoapgobdbedcemjljbihmemj_0.indexeddb.leveldb/000019.log 
+2021/10/22-07:38:00.681 a48 Delete type=2 #17
+2021/10/22-07:38:00.681 a48 Delete type=2 #20
+2021/10/22-12:49:41.730 b695 Level-0 table #24: started
+2021/10/22-12:49:41.766 b695 Level-0 table #24: 830441 bytes OK
+2021/10/22-12:49:41.770 b695 Delete type=0 #19
+2021/10/22-12:51:11.840 b695 Compacting 1@1 + 1@2 files
+2021/10/22-12:51:11.865 b695 Generated table #25@1: 73 keys, 3164 bytes
+2021/10/22-12:51:11.865 b695 Compacted 1@1 + 1@2 files => 3164 bytes
+2021/10/22-12:51:11.867 b695 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/10/22-12:51:11.867 b695 Delete type=2 #24
+2021/10/22-12:51:11.867 b695 Delete type=2 #21

@@ -1,0 +1,320 @@
+{
+   "activateLabel": {
+      "message": "Aktivirajte"
+   },
+   "activateLicenseButtonLabel": {
+      "message": "ali aktivirajte licenco"
+   },
+   "activeTabDesc": {
+      "message": "Kliknite ikono razširitve, da poiščete aktivni zavihek Meet"
+   },
+   "activeTabLabel": {
+      "message": "Poiščite zavihek Active Meet"
+   },
+   "alwaysShowLabel": {
+      "message": "Vedno pokaži imena udeležencev"
+   },
+   "attendanceDesc": {
+      "message": "Zajemite prisotnost srečanja in izvozite v CSV"
+   },
+   "attendanceLabel": {
+      "message": "Bodite prisotni"
+   },
+   "autoAdmitDesc": {
+      "message": "Samodejno sprejme nove udeležence na Meet"
+   },
+   "autoAdmitLabel": {
+      "message": "Samodejni sprejem novih udeležencev"
+   },
+   "autoFullScreenDesc": {
+      "message": "Samodejno preklopi na celozaslonski način, ko nekdo predstavlja"
+   },
+   "autoFullScreenLabel": {
+      "message": "Samodejni celozaslonski način"
+   },
+   "autoJoinDesc": {
+      "message": "Pridružite se sestanku samodejno"
+   },
+   "autoJoinDescOption": {
+      "message": "Pridružite se sestanku samo, če so prisotni udeleženci"
+   },
+   "autoJoinLabel": {
+      "message": "Samodejno pridruži"
+   },
+   "autoMinimizeDesc": {
+      "message": "Samodejno zmanjšajte videoposnetek, ko se pridružite sestanku"
+   },
+   "autoMinimizeLabel": {
+      "message": "Samodejno zmanjšanje videa"
+   },
+   "autoMuteDesc": {
+      "message": "Samodejno utišaj mikrofon ob pridružitvi"
+   },
+   "autoMuteLabel": {
+      "message": "Samodejni izklop"
+   },
+   "autoRecordDesc": {
+      "message": "Samodejno začni snemati Meet (potreben je Google Workspace)"
+   },
+   "autoRecordDescOne": {
+      "message": "Samodejno začni snemanje"
+   },
+   "autoRecordDescTwo": {
+      "message": "Ročno začnite snemati"
+   },
+   "autoRecordLabel": {
+      "message": "Samodejno snemanje"
+   },
+   "autoRejectDesc": {
+      "message": "Samodejno zavrne nove udeležence srečanja"
+   },
+   "autoRejectLabel": {
+      "message": "Samodejno zavrni nove udeležence"
+   },
+   "autoUnmuteDesc": {
+      "message": "Preprečite drugim, da bi utišali vaš mikrofon"
+   },
+   "autoUnmuteLabel": {
+      "message": "Samodejno vklopi zvok"
+   },
+   "autoVideoDesc": {
+      "message": "Nastavite video, če želite izklopiti pridružitev"
+   },
+   "autoVideoLabel": {
+      "message": "Samodejni video izklop"
+   },
+   "basicFeatures": {
+      "message": "Osnovne lastnosti"
+   },
+   "bgColorDesc": {
+      "message": "Nastavite barvo ozadja po meri v programu Meet"
+   },
+   "bgColorLabel": {
+      "message": "Nastavite barvo ozadja"
+   },
+   "captionsDesc": {
+      "message": "Samodejno vklopi napise"
+   },
+   "captionsLabel": {
+      "message": "Samodejni napisi"
+   },
+   "chimesDesc": {
+      "message": "Vedno slišite zvok zvona, ko se udeleženci pridružijo in zapustijo, ali a, ko prejmete novo sporočilo v klepetu"
+   },
+   "chimesLabel": {
+      "message": "Vedno igraj zvončke"
+   },
+   "copyUrlDesc": {
+      "message": "Samodejno kopiraj URL Meet v odložišče"
+   },
+   "copyUrlLabel": {
+      "message": "Samodejno kopiraj URL Meet"
+   },
+   "darkModeDesc": {
+      "message": "Naredi Google Meet temen način"
+   },
+   "darkModeLabel": {
+      "message": "Temni način"
+   },
+   "desktopApp": {
+      "message": "namizna aplikacija"
+   },
+   "desktopDesc": {
+      "message": "Odprite vse povezave Google Cal v"
+   },
+   "desktopLabel": {
+      "message": "Odprite povezave Meet v namizni aplikaciji"
+   },
+   "displayClockDesc": {
+      "message": "Prikažite uro, tudi če ni v celozaslonskem načinu"
+   },
+   "displayClockLabel": {
+      "message": "Prikaz ure"
+   },
+   "doNotDisturbCommentsBubbleDesc": {
+      "message": "Skrij oblaček z obvestili o komentarjih"
+   },
+   "doNotDisturbCommentsDesc": {
+      "message": "Skrij komentarje in uporabniška pojavna okna"
+   },
+   "doNotDisturbDesc": {
+      "message": "Izključi vse zvoke obvestil Meet, skrij nov komentar"
+   },
+   "doNotDisturbLabel": {
+      "message": "Ne moti"
+   },
+   "doNotDisturbSoundsDesc": {
+      "message": "Izklop vseh zvokov obvestil Meet"
+   },
+   "emojiToolTipDesc": {
+      "message": "Ta funkcija je privzeto vklopljena in do nje lahko dostopate iz okna za klepet v storitvi Google Meet"
+   },
+   "extDesc": {
+      "message": "40 novih funkcij za Google Meet, kot so utišanje vseh, odstranjevanje vseh, samodejno priznanje, emojiji, zrcalni videoposnetki, barva ozadja in Pritisni in govori!"
+   },
+   "extName": {
+      "message": "Google Meet Enhancement Suite"
+   },
+   "generalToolTipDesc": {
+      "message": "Ta funkcija je privzeto vklopljena in do nje lahko dostopate iz menija za udeležence v storitvi Google Meet"
+   },
+   "hideAddOthersDesc": {
+      "message": "Ko se pridružite sestanku, skrije pojavno okno »Dodaj druge«"
+   },
+   "hideAddOthersLabel": {
+      "message": "Skrij pojavno okno »Dodaj druge«"
+   },
+   "hidePartNames": {
+      "message": "Skrij imena udeležencev"
+   },
+   "hideSpeakingIcons": {
+      "message": "Skrij ikone, ki govorijo udeleženca"
+   },
+   "hideTopBarDesc": {
+      "message": "Ko spodnja vrstica izgine, skrijete zgornjo vrstico"
+   },
+   "hideTopBarLabel": {
+      "message": "Samodejno skrij zgornjo vrstico"
+   },
+   "leaveConfirmDesc": {
+      "message": "Prosite za potrditev, ko zapustite sestanek"
+   },
+   "leaveConfirmLabel": {
+      "message": "Pustite potrditev"
+   },
+   "meetProButtonLabel": {
+      "message": "Pridobite Meet Pro danes"
+   },
+   "meetProSectionDesc": {
+      "message": "Z nadgradnjo na Meet Pro dobite dostop do več kot 20 novih funkcij, ki Google Meet dvignejo na višjo raven."
+   },
+   "meetProSectionLabel": {
+      "message": "Pridobite Meet Pro"
+   },
+   "meetVolumeDesc": {
+      "message": "Prilagodite raven glasnosti za Meet"
+   },
+   "meetVolumeLabel": {
+      "message": "Prilagodite glasnost Meet"
+   },
+   "mirrorVideosDesc": {
+      "message": "Zrcali vse videoposnetke v programu Meet"
+   },
+   "mirrorVideosLabel": {
+      "message": "Mirror Videos"
+   },
+   "muchMore": {
+      "message": "Še veliko!"
+   },
+   "muteAllDesc": {
+      "message": "Izključi vse udeležence prek menija za udeležence"
+   },
+   "muteAllLabel": {
+      "message": "Izključi vse"
+   },
+   "mutePopupDesc": {
+      "message": "Skriva &#39;Ali govoriš?&#39; pojavno okno ob utišanju"
+   },
+   "mutePopupLabel": {
+      "message": "Skrij pojavno okno za utišanje zvoka"
+   },
+   "partVidStyleLabel": {
+      "message": "Video slog udeleženca"
+   },
+   "pinBarDesc": {
+      "message": "Pripnite nadzorno vrstico na dno zaslona"
+   },
+   "pinBarLabel": {
+      "message": "Dno spodnje vrstice"
+   },
+   "pinChatDesc": {
+      "message": "Ko se pridružite Meetu, samodejno pripne pogled klepeta"
+   },
+   "pinChatLabel": {
+      "message": "Samodejno pripni klepet"
+   },
+   "pipDesc": {
+      "message": "Oglejte si videoposnetek udeležencev v sliki v sliki"
+   },
+   "pipLabel": {
+      "message": "Slika v sliki"
+   },
+   "proFeaturesSubHeading": {
+      "message": "Pro funkcije"
+   },
+   "pttDesc": {
+      "message": "Pridržite bližnjično tipko za vklop"
+   },
+   "pttLabel": {
+      "message": "Pritisni za govor"
+   },
+   "pttUpgrade": {
+      "message": "Nadgradite na Pro, da nastavite svojo vezavo tipk"
+   },
+   "quickEmojiDesc": {
+      "message": "V okno za klepet doda hitre bližnjice do emojijev"
+   },
+   "quickEmojiLabel": {
+      "message": "Hitre reakcije emodžijev"
+   },
+   "quickLeaveDesc": {
+      "message": "Uporabite bližnjično tipko, da zapustite klic"
+   },
+   "quickLeaveLabel": {
+      "message": "Hitri odhod"
+   },
+   "removeAllDesc": {
+      "message": "Odstranite vse udeležence prek menija za udeležence"
+   },
+   "removeAllLabel": {
+      "message": "Odstrani vse"
+   },
+   "returnHomeDesc": {
+      "message": "Vrne se na začetni zaslon Meet po izhodu iz Meeta"
+   },
+   "returnHomeLabel": {
+      "message": "Vrnite se na začetni zaslon ob prekinitvi"
+   },
+   "seeFeatures": {
+      "message": "da vidimo vse funkcije, ki smo jih načrtovali"
+   },
+   "sortParticipantsDesc": {
+      "message": "Doda preklop na seznam udeležencev za razvrščanje po priimku"
+   },
+   "sortParticipantsLabel": {
+      "message": "Razvrsti seznam udeležencev"
+   },
+   "speakerBorderDesc": {
+      "message": "Doda mejo okoli govornih udeležencev"
+   },
+   "speakerBorderLabel": {
+      "message": "Oznaka zvočnika"
+   },
+   "startMeet": {
+      "message": "Začnite srečanje"
+   },
+   "timerDesc": {
+      "message": "Prikaže časovnik sestanka v spodnji vrstici zavihkov"
+   },
+   "timerLabel": {
+      "message": "Časovnik srečanja"
+   },
+   "title": {
+      "message": "Meet Enhancement Suite"
+   },
+   "toggleBarDesc": {
+      "message": "Preklopite spodnjo nadzorno vrstico, da se prikaže"
+   },
+   "toggleBarLabel": {
+      "message": "Preklopi spodnjo vrstico"
+   },
+   "transBarDesc": {
+      "message": "Spodnja vrstica naj bo prozorna"
+   },
+   "transBarLabel": {
+      "message": "Prozorna vrstica"
+   },
+   "viewRoadmap": {
+      "message": "Oglejte si naš načrt"
+   }
+}

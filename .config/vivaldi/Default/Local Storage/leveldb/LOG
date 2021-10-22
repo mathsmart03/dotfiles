@@ -1,0 +1,66 @@
+2021/10/22-07:37:58.736 3 Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/Local Storage/leveldb/MANIFEST-000001
+2021/10/22-07:37:58.742 3 Recovering log #272
+2021/10/22-07:37:58.745 3 Reusing old log /home/rejyr/.config/vivaldi/Default/Local Storage/leveldb/000272.log 
+2021/10/22-08:11:00.361 15 Level-0 table #276: started
+2021/10/22-08:11:00.370 15 Level-0 table #276: 13245 bytes OK
+2021/10/22-08:11:00.383 15 Delete type=0 #272
+2021/10/22-08:11:00.385 15 Compacting 4@0 + 1@1 files
+2021/10/22-08:11:00.447 15 Generated table #277@0: 726 keys, 1491142 bytes
+2021/10/22-08:11:00.447 15 Compacted 4@0 + 1@1 files => 1491142 bytes
+2021/10/22-08:11:00.455 15 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/10/22-08:11:00.459 15 Delete type=2 #271
+2021/10/22-08:11:00.459 15 Delete type=2 #273
+2021/10/22-08:11:00.460 15 Delete type=2 #267
+2021/10/22-08:11:00.460 15 Delete type=2 #276
+2021/10/22-08:11:00.461 15 Delete type=2 #269
+2021/10/22-09:13:12.723 13 Level-0 table #279: started
+2021/10/22-09:13:12.738 13 Level-0 table #279: 378806 bytes OK
+2021/10/22-09:13:12.745 13 Delete type=0 #275
+2021/10/22-11:45:59.413 37 Level-0 table #281: started
+2021/10/22-11:45:59.418 37 Level-0 table #281: 13876 bytes OK
+2021/10/22-11:45:59.424 37 Delete type=0 #278
+2021/10/22-12:44:59.923 42 Level-0 table #283: started
+2021/10/22-12:44:59.932 42 Level-0 table #283: 162030 bytes OK
+2021/10/22-12:44:59.938 42 Delete type=0 #280
+2021/10/22-12:48:59.923 42 Level-0 table #285: started
+2021/10/22-12:48:59.931 42 Level-0 table #285: 159569 bytes OK
+2021/10/22-12:48:59.938 42 Delete type=0 #282
+2021/10/22-12:48:59.940 42 Compacting 4@0 + 1@1 files
+2021/10/22-12:48:59.994 42 Generated table #286@0: 733 keys, 1491661 bytes
+2021/10/22-12:48:59.995 42 Compacted 4@0 + 1@1 files => 1491661 bytes
+2021/10/22-12:48:59.998 42 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/10/22-12:49:00.001 42 Delete type=2 #279
+2021/10/22-12:49:00.002 42 Delete type=2 #285
+2021/10/22-12:49:00.002 42 Delete type=2 #277
+2021/10/22-12:49:00.003 42 Delete type=2 #283
+2021/10/22-12:49:00.003 42 Delete type=2 #281
+2021/10/22-13:38:43.703 42 Level-0 table #288: started
+2021/10/22-13:38:43.712 42 Level-0 table #288: 164321 bytes OK
+2021/10/22-13:38:43.715 42 Delete type=0 #284
+2021/10/22-13:47:20.863 5e Level-0 table #290: started
+2021/10/22-13:47:20.867 5e Level-0 table #290: 165167 bytes OK
+2021/10/22-13:47:20.869 5e Delete type=0 #287
+2021/10/22-14:01:20.863 5e Level-0 table #292: started
+2021/10/22-14:01:20.873 5e Level-0 table #292: 164884 bytes OK
+2021/10/22-14:01:20.875 5e Delete type=0 #289
+2021/10/22-14:01:43.702 64 Level-0 table #294: started
+2021/10/22-14:01:43.711 64 Level-0 table #294: 158984 bytes OK
+2021/10/22-14:01:43.713 64 Delete type=0 #291
+2021/10/22-14:01:43.714 64 Compacting 4@0 + 1@1 files
+2021/10/22-14:01:43.731 64 Generated table #295@0: 733 keys, 1492085 bytes
+2021/10/22-14:01:43.785 64 Compacted 4@0 + 1@1 files => 1492085 bytes
+2021/10/22-14:01:43.787 64 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/10/22-14:01:43.788 64 Delete type=2 #294
+2021/10/22-14:01:43.788 64 Delete type=2 #288
+2021/10/22-14:01:43.789 64 Delete type=2 #292
+2021/10/22-14:01:43.789 64 Delete type=2 #290
+2021/10/22-14:01:43.789 64 Delete type=2 #286
+2021/10/22-14:37:43.702 6c Level-0 table #297: started
+2021/10/22-14:37:43.705 6c Level-0 table #297: 18147 bytes OK
+2021/10/22-14:37:43.709 6c Delete type=0 #293
+2021/10/22-14:49:43.704 7d Level-0 table #299: started
+2021/10/22-14:49:43.712 7d Level-0 table #299: 24190 bytes OK
+2021/10/22-14:49:43.715 7d Delete type=0 #296
+2021/10/22-14:57:43.702 7d Level-0 table #301: started
+2021/10/22-14:57:43.711 7d Level-0 table #301: 19088 bytes OK
+2021/10/22-14:57:43.715 7d Delete type=0 #298

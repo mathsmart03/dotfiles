@@ -1,0 +1,27 @@
+2021/10/22-07:38:00.729 a48 Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/Extension State/MANIFEST-000001
+2021/10/22-07:38:00.730 a48 Recovering log #88
+2021/10/22-07:38:00.734 a48 Reusing old log /home/rejyr/.config/vivaldi/Default/Extension State/000088.log 
+2021/10/22-08:11:04.389 43d1 Level-0 table #92: started
+2021/10/22-08:11:04.420 43d1 Level-0 table #92: 3367407 bytes OK
+2021/10/22-08:11:04.429 43d1 Delete type=0 #88
+2021/10/22-09:32:24.554 72b7 Level-0 table #94: started
+2021/10/22-09:32:24.576 72b7 Level-0 table #94: 3423289 bytes OK
+2021/10/22-09:32:24.580 72b7 Delete type=0 #91
+2021/10/22-09:32:24.582 72b7 Compacting 4@0 + 1@1 files
+2021/10/22-09:32:24.605 72b7 Generated table #95@0: 14 keys, 15219 bytes
+2021/10/22-09:32:24.606 72b7 Compacted 4@0 + 1@1 files => 15219 bytes
+2021/10/22-09:32:24.607 72b7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/10/22-09:32:24.607 72b7 Delete type=2 #92
+2021/10/22-09:32:24.607 72b7 Delete type=2 #94
+2021/10/22-09:32:24.608 72b7 Delete type=2 #89
+2021/10/22-09:32:24.608 72b7 Delete type=2 #87
+2021/10/22-09:32:24.608 72b7 Delete type=2 #85
+2021/10/22-13:28:54.435 bb6f Level-0 table #97: started
+2021/10/22-13:28:54.443 bb6f Level-0 table #97: 3672004 bytes OK
+2021/10/22-13:28:54.445 bb6f Delete type=0 #93
+2021/10/22-14:07:44.169 105c7 Level-0 table #99: started
+2021/10/22-14:07:44.184 105c7 Level-0 table #99: 3417505 bytes OK
+2021/10/22-14:07:44.186 105c7 Delete type=0 #96
+2021/10/22-14:58:28.882 14fc9 Level-0 table #101: started
+2021/10/22-14:58:28.890 14fc9 Level-0 table #101: 3559767 bytes OK
+2021/10/22-14:58:28.891 14fc9 Delete type=0 #98

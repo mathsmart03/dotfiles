@@ -1,0 +1,35 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "48x48.png"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "chat-interceptor.bundle.js", "chat.bundle.js", "injector.bundle.js", "translatormode.bundle.js" ],
+      "matches": [ "https://www.youtube.com/live_chat*", "https://www.youtube.com/live_chat_replay*" ]
+   }, {
+      "all_frames": true,
+      "js": [ "video_embedder.bundle.js" ],
+      "matches": [ "https://www.youtube.com/error*?*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.youtube.com 'unsafe-eval'; object-src 'self'",
+   "description": "Get live translations for YouTube streams, crowdsourced from multilingual viewers!",
+   "differential_fingerprint": "1.90d204584a8da0e6c3383763531216f58088bc2af9f7b624f092748351669f89",
+   "icons": {
+      "128": "128x128.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArqDNKOUFbiuG8JrS6GhZG7CKFv7AYPbtbxPq2iAm17xrvGtMwbMO7vKcBMpjWDAmi81YTQ5smAjViIm4zBKLmOm70rPMVYAauKMLMaWoC1jHrZTnFY8TLreoJ5JYwvCbI4586b9lYC717qfbBwoXcR6oBCDCS1lXWhPwtZ+mP7U+CSHPpWqxeh3auf4fFLCVNpo8Ag+/hoW1hzqRnXvuw+m6XAUJgKFCpEbsAsmLNKwzUEqGCHwy3bsoKrcyGaLfJ9fle4wF4ah+H1wIJeh/VbSpJbtq2aeOAuiclafy6Eai1VasH/xF46LClUxgg4Su9QPb03pSM9IeYw9BIw55WQIDAQAB",
+   "manifest_version": 2,
+   "name": "LiveTL - Translation Filter for Streams",
+   "options_ui": {
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "webRequest", "webRequestBlocking", "https://www.youtube.com/*?*", "https://www.youtube.com/youtubei/v1/live_chat/get_live_chat/*", "https://www.youtube.com/youtubei/v1/live_chat/get_live_chat_replay/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.9.420",
+   "web_accessible_resources": [ "*.js", "*.html", "*.png" ]
+}

@@ -1,0 +1,320 @@
+{
+   "activateLabel": {
+      "message": "Kích hoạt"
+   },
+   "activateLicenseButtonLabel": {
+      "message": "hoặc Kích hoạt Giấy phép"
+   },
+   "activeTabDesc": {
+      "message": "Nhấp vào biểu tượng tiện ích mở rộng để tìm tab Gặp gỡ đang hoạt động"
+   },
+   "activeTabLabel": {
+      "message": "Tìm tab Gặp gỡ đang hoạt động"
+   },
+   "alwaysShowLabel": {
+      "message": "Luôn hiển thị tên người tham gia"
+   },
+   "attendanceDesc": {
+      "message": "Ghi lại sự tham dự của cuộc họp và xuất sang CSV"
+   },
+   "attendanceLabel": {
+      "message": "Tham dự"
+   },
+   "autoAdmitDesc": {
+      "message": "Tự động thừa nhận những người mới tham gia Gặp gỡ"
+   },
+   "autoAdmitLabel": {
+      "message": "Tự động nhận người mới tham gia"
+   },
+   "autoFullScreenDesc": {
+      "message": "Tự động chuyển sang chế độ toàn màn hình khi ai đó đang trình bày"
+   },
+   "autoFullScreenLabel": {
+      "message": "Tự động toàn màn hình"
+   },
+   "autoJoinDesc": {
+      "message": "Tham gia cuộc họp tự động"
+   },
+   "autoJoinDescOption": {
+      "message": "Chỉ tham gia cuộc họp khi người tham gia có mặt"
+   },
+   "autoJoinLabel": {
+      "message": "Tham gia tự động"
+   },
+   "autoMinimizeDesc": {
+      "message": "Tự động thu nhỏ video của bạn khi bạn tham gia cuộc họp"
+   },
+   "autoMinimizeLabel": {
+      "message": "Tự động thu nhỏ video"
+   },
+   "autoMuteDesc": {
+      "message": "Tự động tắt tiếng micrô khi tham gia"
+   },
+   "autoMuteLabel": {
+      "message": "Tự động tắt tiếng"
+   },
+   "autoRecordDesc": {
+      "message": "Tự động bắt đầu ghi lại Cuộc gặp gỡ (yêu cầu Không gian làm việc của Google)"
+   },
+   "autoRecordDescOne": {
+      "message": "Tự động bắt đầu ghi"
+   },
+   "autoRecordDescTwo": {
+      "message": "Bắt đầu ghi theo cách thủ công"
+   },
+   "autoRecordLabel": {
+      "message": "Ghi tự động"
+   },
+   "autoRejectDesc": {
+      "message": "Tự động từ chối những người mới tham gia Gặp gỡ"
+   },
+   "autoRejectLabel": {
+      "message": "Tự động từ chối người mới tham gia"
+   },
+   "autoUnmuteDesc": {
+      "message": "Ngăn người khác tắt tiếng micrô của bạn"
+   },
+   "autoUnmuteLabel": {
+      "message": "Tự động bật tiếng"
+   },
+   "autoVideoDesc": {
+      "message": "Đặt video để tắt khi tham gia"
+   },
+   "autoVideoLabel": {
+      "message": "Tự động tắt video"
+   },
+   "basicFeatures": {
+      "message": "Tính năng cơ bản"
+   },
+   "bgColorDesc": {
+      "message": "Đặt màu nền tùy chỉnh trong Meet"
+   },
+   "bgColorLabel": {
+      "message": "Đặt màu nền"
+   },
+   "captionsDesc": {
+      "message": "Tự động bật phụ đề"
+   },
+   "captionsLabel": {
+      "message": "Phụ đề tự động"
+   },
+   "chimesDesc": {
+      "message": "Luôn nghe thấy âm thanh chuông khi người tham gia tham gia và rời đi hoặc khi nhận được tin nhắn trò chuyện mới"
+   },
+   "chimesLabel": {
+      "message": "Luôn chơi chuông"
+   },
+   "copyUrlDesc": {
+      "message": "Tự động sao chép URL Meet vào khay nhớ tạm"
+   },
+   "copyUrlLabel": {
+      "message": "Tự động sao chép URL Meet"
+   },
+   "darkModeDesc": {
+      "message": "Đặt Google Meet ở chế độ tối"
+   },
+   "darkModeLabel": {
+      "message": "Chế độ tối"
+   },
+   "desktopApp": {
+      "message": "ứng dụng máy tính để bàn"
+   },
+   "desktopDesc": {
+      "message": "Mở tất cả các liên kết Google Cal trong"
+   },
+   "desktopLabel": {
+      "message": "Mở liên kết Meet trong ứng dụng dành cho máy tính để bàn"
+   },
+   "displayClockDesc": {
+      "message": "Hiển thị đồng hồ ngay cả khi không ở chế độ toàn màn hình"
+   },
+   "displayClockLabel": {
+      "message": "Đồng hồ hiển thị"
+   },
+   "doNotDisturbCommentsBubbleDesc": {
+      "message": "Ẩn bong bóng thông báo nhận xét"
+   },
+   "doNotDisturbCommentsDesc": {
+      "message": "Ẩn nhận xét và cửa sổ bật lên tham gia của người dùng"
+   },
+   "doNotDisturbDesc": {
+      "message": "Tắt tiếng tất cả âm thanh thông báo Meet, ẩn nhận xét mới"
+   },
+   "doNotDisturbLabel": {
+      "message": "Đừng làm phiền"
+   },
+   "doNotDisturbSoundsDesc": {
+      "message": "Tắt tiếng tất cả âm thanh thông báo Meet"
+   },
+   "emojiToolTipDesc": {
+      "message": "Tính năng này được bật theo mặc định và bạn có thể truy cập nó từ cửa sổ trò chuyện trong Google Meet"
+   },
+   "extDesc": {
+      "message": "40 tính năng mới cho Google Meet như tắt tiếng tất cả, xóa tất cả, tự động thừa nhận, biểu tượng cảm xúc, video phản chiếu, màu nền và nhấn để nói!"
+   },
+   "extName": {
+      "message": "Bộ nâng cao của Google Meet"
+   },
+   "generalToolTipDesc": {
+      "message": "Tính năng này được bật theo mặc định và bạn có thể truy cập nó từ menu người tham gia trong Google Meet"
+   },
+   "hideAddOthersDesc": {
+      "message": "Ẩn cửa sổ bật lên 'Thêm người khác' khi tham gia Gặp gỡ"
+   },
+   "hideAddOthersLabel": {
+      "message": "Ẩn cửa sổ bật lên 'Thêm người khác'"
+   },
+   "hidePartNames": {
+      "message": "Ẩn tên người tham gia"
+   },
+   "hideSpeakingIcons": {
+      "message": "Ẩn các biểu tượng phát biểu của người tham gia"
+   },
+   "hideTopBarDesc": {
+      "message": "Ẩn thanh trên cùng khi thanh dưới cùng biến mất"
+   },
+   "hideTopBarLabel": {
+      "message": "Tự động ẩn thanh trên cùng"
+   },
+   "leaveConfirmDesc": {
+      "message": "Yêu cầu xác nhận khi bạn rời cuộc họp"
+   },
+   "leaveConfirmLabel": {
+      "message": "Xác nhận rời khỏi"
+   },
+   "meetProButtonLabel": {
+      "message": "Hãy Meet Pro ngay hôm nay"
+   },
+   "meetProSectionDesc": {
+      "message": "Bằng cách nâng cấp lên Meet Pro, bạn có quyền truy cập vào hơn 20 tính năng mới đưa Google Meet lên một tầm cao mới."
+   },
+   "meetProSectionLabel": {
+      "message": "Làm quen với chuyên gia"
+   },
+   "meetVolumeDesc": {
+      "message": "Điều chỉnh mức âm lượng của Meet"
+   },
+   "meetVolumeLabel": {
+      "message": "Điều chỉnh âm lượng đáp ứng"
+   },
+   "mirrorVideosDesc": {
+      "message": "Phản chiếu tất cả video trong Meet"
+   },
+   "mirrorVideosLabel": {
+      "message": "Video phản chiếu"
+   },
+   "muchMore": {
+      "message": "Nhiều hơn nữa sẽ đến!"
+   },
+   "muteAllDesc": {
+      "message": "Tắt tiếng tất cả người tham gia qua menu người tham gia"
+   },
+   "muteAllLabel": {
+      "message": "Câm tất cả"
+   },
+   "mutePopupDesc": {
+      "message": "Ẩn 'Bạn đang nói?' bật lên khi bị tắt tiếng"
+   },
+   "mutePopupLabel": {
+      "message": "Ẩn cửa sổ bật lên tắt tiếng"
+   },
+   "partVidStyleLabel": {
+      "message": "Kiểu video của người tham gia"
+   },
+   "pinBarDesc": {
+      "message": "Ghim thanh điều khiển xuống cuối màn hình"
+   },
+   "pinBarLabel": {
+      "message": "Ghim thanh dưới cùng"
+   },
+   "pinChatDesc": {
+      "message": "Tự động ghim chế độ xem trò chuyện khi tham gia Meet"
+   },
+   "pinChatLabel": {
+      "message": "Tự động ghim Trò chuyện"
+   },
+   "pipDesc": {
+      "message": "Xem video của người tham gia ở chế độ ảnh trong ảnh"
+   },
+   "pipLabel": {
+      "message": "Hình ảnh trong ảnh"
+   },
+   "proFeaturesSubHeading": {
+      "message": "Tính năng Pro"
+   },
+   "pttDesc": {
+      "message": "Giữ phím nóng để bật tiếng"
+   },
+   "pttLabel": {
+      "message": "Ấn chuông nói chuyện"
+   },
+   "pttUpgrade": {
+      "message": "Nâng cấp lên Pro để đặt ràng buộc khóa của riêng bạn"
+   },
+   "quickEmojiDesc": {
+      "message": "Thêm các phím tắt nhanh biểu tượng cảm xúc vào cửa sổ trò chuyện"
+   },
+   "quickEmojiLabel": {
+      "message": "Phản ứng biểu tượng cảm xúc nhanh"
+   },
+   "quickLeaveDesc": {
+      "message": "Sử dụng phím nóng để rời cuộc gọi"
+   },
+   "quickLeaveLabel": {
+      "message": "Rời đi nhanh chóng"
+   },
+   "removeAllDesc": {
+      "message": "Xóa tất cả người tham gia qua menu người tham gia"
+   },
+   "removeAllLabel": {
+      "message": "Xóa bỏ tất cả"
+   },
+   "returnHomeDesc": {
+      "message": "Quay lại màn hình chính của Meet sau khi rời khỏi Meet"
+   },
+   "returnHomeLabel": {
+      "message": "Quay lại màn hình chính khi cúp máy"
+   },
+   "seeFeatures": {
+      "message": "để xem tất cả các tính năng chúng tôi đã lên kế hoạch"
+   },
+   "sortParticipantsDesc": {
+      "message": "Thêm chuyển đổi vào danh sách người tham gia để sắp xếp theo họ"
+   },
+   "sortParticipantsLabel": {
+      "message": "Sắp xếp danh sách người tham gia"
+   },
+   "speakerBorderDesc": {
+      "message": "Thêm đường viền xung quanh những người tham gia nói"
+   },
+   "speakerBorderLabel": {
+      "message": "Loa nổi bật"
+   },
+   "startMeet": {
+      "message": "Bắt đầu một cuộc gặp gỡ"
+   },
+   "timerDesc": {
+      "message": "Hiển thị bộ hẹn giờ họp trong thanh tab dưới cùng"
+   },
+   "timerLabel": {
+      "message": "Hẹn giờ họp"
+   },
+   "title": {
+      "message": "Bộ nâng cao Meet"
+   },
+   "toggleBarDesc": {
+      "message": "Chuyển đổi thanh điều khiển dưới cùng để xuất hiện"
+   },
+   "toggleBarLabel": {
+      "message": "Chuyển đổi thanh dưới cùng"
+   },
+   "transBarDesc": {
+      "message": "Làm cho thanh dưới cùng trong suốt"
+   },
+   "transBarLabel": {
+      "message": "Thanh trong suốt"
+   },
+   "viewRoadmap": {
+      "message": "Xem lộ trình của chúng tôi"
+   }
+}

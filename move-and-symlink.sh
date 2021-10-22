@@ -8,7 +8,7 @@
 config=~/.config			  # absolute config directory
 dir=~/dotfiles/.config                    # absolute dotfiles directory
 olddir=~/dotfiles/.config-old             # absolute old dotfiles backup directory
-files="alacritty nvim pulse sway swaylock tmux waybar wofi"    # relative list of files/folders to move and symlink
+files="vivaldi"    # relative list of files/folders to move and symlink
 
 ##########
 

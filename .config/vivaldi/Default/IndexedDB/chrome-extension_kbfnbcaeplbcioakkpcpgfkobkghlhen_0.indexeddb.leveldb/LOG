@@ -1,0 +1,6 @@
+2021/10/22-07:38:09.655 9c5 Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/IndexedDB/chrome-extension_kbfnbcaeplbcioakkpcpgfkobkghlhen_0.indexeddb.leveldb/MANIFEST-000001
+2021/10/22-07:38:09.656 9c5 Recovering log #3
+2021/10/22-07:38:09.673 9c5 Reusing old log /home/rejyr/.config/vivaldi/Default/IndexedDB/chrome-extension_kbfnbcaeplbcioakkpcpgfkobkghlhen_0.indexeddb.leveldb/000003.log 
+2021/10/22-14:01:04.922 f9f7 Level-0 table #5: started
+2021/10/22-14:01:04.930 f9f7 Level-0 table #5: 1399457 bytes OK
+2021/10/22-14:01:04.932 f9f7 Delete type=0 #3
