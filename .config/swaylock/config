@@ -1,7 +1,7 @@
 ignore-empty-password
 show-failed-attempts
 daemonize
-image=~/Pictures/pastel_mountain_wallpaper.jpg
+image=~/dotfiles/wallpapers/pastel_mountain_wallpaper.jpg
 scaling=fill
 indicator-caps-lock
 font=SourceCodePro
