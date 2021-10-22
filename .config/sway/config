@@ -32,7 +32,7 @@ font pango: SourceCodePro Medium 12
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/pastel_mountain_wallpaper.jpg fill
+output * bg ~/dotfiles/wallpapers/pastel_mountain_wallpaper.jpg fill
 #
 # Example configuration:
 #
