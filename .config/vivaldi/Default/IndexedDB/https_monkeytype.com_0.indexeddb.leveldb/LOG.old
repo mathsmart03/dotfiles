@@ -1,6 +1,0 @@
-2021/10/19-18:19:36.697 15ee Creating DB /home/rejyr/.config/vivaldi/Default/IndexedDB/https_monkeytype.com_0.indexeddb.leveldb since it was missing.
-2021/10/19-18:19:36.707 15ee Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/IndexedDB/https_monkeytype.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/10/19-18:19:44.056 2353 Level-0 table #5: started
-2021/10/19-18:19:44.058 2353 Level-0 table #5: 1139 bytes OK
-2021/10/19-18:19:44.061 2353 Delete type=0 #3
-2021/10/19-18:19:44.061 2353 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

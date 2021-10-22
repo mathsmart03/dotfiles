@@ -1,6 +1,0 @@
-2021/10/22-14:04:27.257 105c7 Creating DB /home/rejyr/.config/vivaldi/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb since it was missing.
-2021/10/22-14:04:27.266 105c7 Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/10/22-14:10:51.978 11338 Level-0 table #5: started
-2021/10/22-14:10:51.982 11338 Level-0 table #5: 215021 bytes OK
-2021/10/22-14:10:51.983 11338 Delete type=0 #3
-2021/10/22-14:10:51.983 11338 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

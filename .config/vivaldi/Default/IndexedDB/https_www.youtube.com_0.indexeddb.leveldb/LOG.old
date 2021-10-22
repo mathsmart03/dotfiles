@@ -1,9 +1,0 @@
-2021/10/22-14:46:30.556 13aad Reusing MANIFEST /home/rejyr/.config/vivaldi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/10/22-14:46:30.557 13aad Recovering log #58
-2021/10/22-14:46:30.557 13aad Reusing old log /home/rejyr/.config/vivaldi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000058.log 
-2021/10/22-14:46:30.770 13ee9 Compacting 1@1 + 1@2 files
-2021/10/22-14:46:30.774 13ee9 Generated table #61@1: 371 keys, 29202 bytes
-2021/10/22-14:46:30.774 13ee9 Compacted 1@1 + 1@2 files => 29202 bytes
-2021/10/22-14:46:30.775 13ee9 compacted to: files[ 0 0 1 0 0 0 0 ]
-2021/10/22-14:46:30.775 13ee9 Delete type=2 #56
-2021/10/22-14:46:30.775 13ee9 Delete type=2 #59

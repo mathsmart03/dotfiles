@@ -1,5 +1,0 @@
-Convolutional
-Kurzgesagt
-Trexler
-okazaki
-checksum_v1 = 676f1e693f91ba749791917aa9960c5d
