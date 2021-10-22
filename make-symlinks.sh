@@ -12,9 +12,12 @@ olddir=~/dotfiles.config-old		  # absolute old dotfiles backup directory
 ##########
 
 # create dotfiles backup directory
-echo "Creating $olddir for backup of any existing dotfiles"
-mkdir -p $olddir
-echo "...done"
+if [ ! -d $olddir ]
+then
+    echo "Creating $olddir for backup of any existing dotfiles"
+    mkdir -p $olddir
+    echo "...done"
+fi
 
 # create symlinks 
 for file in $config/*; do
