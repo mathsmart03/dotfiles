@@ -1,0 +1,3 @@
+function prompt
+   neofetch
+end
