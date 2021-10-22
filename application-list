@@ -1,0 +1,4 @@
+# space separated list of arch applications
+acapid alacritty audacious bat bluez bluez-utils brightnessctl dhcpcd discord fish gcc git github-cli hdparm htop ifplugd jdk8-openjdk man-db mpv neofetch neovim networkmanager noto-fonts os-prober playerctl pulseaudio pulseaudio-bluetooth sway swayidle swaylock tmux ttf-font-awesome vivaldi waybar wmname wofi
+# aur applications
+auto-cpufreq cbonsai clion clion-cmake clion-gdb clion-jre clion-lldb laptop-mode-tools logiops-git multimc-bin yay
