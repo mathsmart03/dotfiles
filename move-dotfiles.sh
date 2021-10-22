@@ -30,7 +30,8 @@ for file in $files; do
 
     echo "Moving dotfile $file to $dir"
     mv $config/$file $dir
-    echo "Adding dotfile $file to git"
-    cd $dir
-    exec git add $file
 done
+
+# add changes to git
+cd $dir
+exec git add .
