@@ -26,6 +26,7 @@
         "sway/window"
     ],
     "modules-right": [
+        "pulseaudio",
         "network",
         "memory",
         "cpu",
@@ -123,7 +124,8 @@
     "sway/workspaces": {
         "all-outputs": false,
         "disable-scroll": true,
-        "format": "{icon} {name}",
+        //"format": "{icon} {name}",
+	"format": "{name}",
         "format-icons": {
             "1:www": "龜", // Icon: firefox-browser
             "2:mail": "", // Icon: mail
@@ -136,22 +138,22 @@
         }
     },
 
-    //"pulseaudio": {
-    //    //"scroll-step": 1,
-    //    "format": "{icon}  {volume}%",
-    //    "format-bluetooth": "{icon}  {volume}%",
-    //    "format-muted": "",
-    //    "format-icons": {
-    //        "headphones": "",
-    //        "handsfree": "",
-    //        "headset": "",
-    //        "phone": "",
-    //        "portable": "",
-    //        "car": "",
-    //        "default": ["", ""]
-    //    },
-    //    "on-click": "pavucontrol"
-    //},
+    "pulseaudio": {
+        //"scroll-step": 1,
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
 
     "temperature": {
       "critical-threshold": 80,
