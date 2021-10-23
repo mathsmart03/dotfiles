@@ -8,7 +8,7 @@
 config=~/.config			  # absolute config directory
 dir=~/dotfiles/.config                    # absolute dotfiles directory
 olddir=~/dotfiles/.config-old             # absolute old dotfiles backup directory
-files="vivaldi"    # relative list of files/folders to move and symlink
+files=""    # relative list of files/folders to move and symlink
 
 ##########
 
@@ -24,12 +24,13 @@ fi
 for file in $files; do
     if [ -f $file ] || [ -d $file ]
     then
-	echo "Moving old dotfile $file to $olddir"
-    	mv $dir/$file $olddir
+	echo "Copying old dotfile $file to $olddir"
+    	cp -r $dir/$file $olddir
     fi
 
     echo "Moving dotfile $file to $dir"
     mv $config/$file $dir
+    echo
 done
 
 # add changes to git
