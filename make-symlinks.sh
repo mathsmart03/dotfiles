@@ -5,9 +5,9 @@
 
 ########## Variables
 
-config=~/.config			  # absolute config directory
-dir=~/dotfiles/.config                    # absolute dotfiles directory
-olddir=~/dotfiles.config-old		  # absolute old dotfiles backup directory
+config=~/.config/			  # absolute config directory
+dir=~/dotfiles/.config/                   # absolute dotfiles directory
+olddir=~/dotfiles.config-old/		  # absolute old dotfiles backup directory
 
 ##########
 
@@ -20,13 +20,15 @@ then
 fi
 
 # create symlinks 
-for file in $config/*; do
+for file in $dir/*; do
+    file=${file/$dir/""}
+
     if [ -f $file ] || [ -d $file ]
-    then
-	echo "Moving old dotfile $file to $olddir"
-	mv $dir/$file $olddir
+	then
+	echo "Copying old dotfile $file to $olddir"
+	cp -r $dir$file $olddir
     fi
 
     echo "Creating symlink to $file in $config"
-    ln -s $dir/$file $config/$file
+    ln -s $dir$file $config/$file
 done
