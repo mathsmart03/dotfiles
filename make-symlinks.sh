@@ -7,7 +7,7 @@
 
 config=~/.config			  # absolute config directory
 dir=~/dotfiles/.config                    # absolute dotfiles directory
-olddir=~/dotfiles.config-old		  # absolute old dotfiles backup directory
+olddir=~/dotfiles/.config-old		  # absolute old dotfiles backup directory
 
 ##########
 

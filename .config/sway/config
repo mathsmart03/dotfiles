@@ -9,7 +9,7 @@ gaps inner 10
 gaps outer 5
 
 # disable window titlebar
-# default_border pixel 2
+default_border pixel 2
 
 ### Variables
 #
