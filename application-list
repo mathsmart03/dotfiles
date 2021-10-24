@@ -1,6 +1,6 @@
 # space separated list of arch applications
 # command: pacman -Qen
-alacritty asciiquarium audacious bat bluez bluez-utils brightnessctl cmatrix dhcpcd discord fish gcc git github-cli hdparm htop ifplugd jdk8-openjdk man-db mpv neofetch neovim networkmanager noto-fonts noto-fonts-emoji os-prober playerctl pulseaudio pulseaudio-bluetooth pavucontrol-qt sway swayidle swaylock tmux ttf-font-awesome ttf-linux-libertine unzip vivaldi waybar wmname wofi
+adobe-source-han-sans-jp-fonts alacritty asciiquarium audacious bat bluez bluez-utils brightnessctl cmatrix dhcpcd discord fish gcc git github-cli hdparm htop ifplugd jdk8-openjdk man-db mpv neofetch neovim networkmanager noto-fonts noto-fonts-cjk noto-fonts-emoji os-prober playerctl pulseaudio pulseaudio-bluetooth pavucontrol-qt sway swayidle swaylock tmux ttf-font-awesome ttf-linux-libertine unzip vivaldi waybar wmname wofi
 # aur applications
 # command: pacman -Qm
 auto-cpufreq cbonsai clion clion-cmake clion-gdb clion-jre clion-lldb laptop-mode-tools logiops-git multimc-bin yay
