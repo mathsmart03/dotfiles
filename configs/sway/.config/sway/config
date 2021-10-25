@@ -50,7 +50,7 @@ output * bg ~/dotfiles/wallpapers/pastel_mountain_wallpaper.jpg fill
 #		resume 'swaymsg "output * dpms on"' \
 #	before-sleep 'swaylock'
 
-exec swayidle -w before-sleep 'swaylock'
+exec swayidle -w before-sleep 'swaylock' before-sleep 'playerctl pause'
 
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
