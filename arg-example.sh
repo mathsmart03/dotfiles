@@ -1,16 +1,4 @@
 #!/bin/bash
-############################
-# Moves files/directories in config to dir and creates symlinks
-############################
-
-############################
-# Default directories
-config=~/.config
-dir=~/dotfiles/.config
-olddir=~/dotfiles/.config-old
-############################
-
-# get args
 
 ARGS=$(getopt -a --options c:d:o --long "config:,directory:,old-directory:" -- "$@")
 
@@ -33,6 +21,3 @@ while true; do
       break;;
   esac
 done
-
-exec ./move-dotfiles.sh -c $config -d $dir -o $olddir
-exec ./make-symlinks.sh -c $config -d $dir -o $olddir
