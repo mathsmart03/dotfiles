@@ -3,4 +3,3 @@ if status is-interactive
 end
 
 sway_startup
-prompt
