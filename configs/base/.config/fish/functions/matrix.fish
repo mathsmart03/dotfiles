@@ -1,3 +1,3 @@
 function matrix
-    cmatrix -brm -u 2
+    cmatrix -bm -u 2
 end
