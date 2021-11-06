@@ -10,6 +10,7 @@ SETUVAR _fish_abbr_cpustat:auto\x2dcpufreq\x20\x2d\x2dstats
 SETUVAR _fish_abbr_cr:cargo\x20run\x20\x2d\x2dquiet
 SETUVAR _fish_abbr_ls:exa\x20\x2d\x2dicons
 SETUVAR _fish_abbr_nfet:neofetch
+SETUVAR _fish_abbr_pac:pacman
 SETUVAR _fish_abbr_restart:reboot
 SETUVAR _fish_abbr_sleep:systemctl\x20suspend
 SETUVAR _fish_abbr_update:sudo\x20pacman\x20\x2dSyu
