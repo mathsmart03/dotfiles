@@ -1,0 +1,5 @@
+# space separated list of arch applications
+# command: pacman -Qen
+# aur applications
+# command: pacman -Qm
+asus-touchpad-numpad-driver
