@@ -8,6 +8,12 @@ SETUVAR _fish_abbr_c:cargo
 SETUVAR _fish_abbr_cl:clear
 SETUVAR _fish_abbr_cr:cargo\x20run\x20\x2d\x2dquiet
 SETUVAR _fish_abbr_ls:exa\x20\x2d\x2dicons
+SETUVAR _fish_abbr_nfet:neofetch
+SETUVAR _fish_abbr_restart:reboot
+SETUVAR _fish_abbr_sleep:systemctl\x20suspend
+SETUVAR _fish_abbr_update:sudo\x20pacman\x20\x2dSyu
+SETUVAR _fish_abbr_yeet:sudo\x20pacman\x20\x2dRsn
+SETUVAR _fish_abbr_yoink:sudo\x20pacman\x20\x2dS
 SETUVAR fish_color_autosuggestion:747369
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:99cc99
