@@ -241,13 +241,19 @@ schemes:
      magenta: '0xe8e6df'
      cyan:    '0xd27b53'
      white:   '0xf2f0ec'
+
   garuda: &garuda
+    # Default colors
     primary:
       background: '0x0a1124'
       foreground: '0xedc29a'
+     
+    # Colors the cursor will use if `custom_cursor_colors` is true
     cursor:
       text:       '0x0a1124'
       cursor:     '0xedc29a'
+    
+    # Normal colors
     normal:
       black:      '0x0a1124'
       red:        '0x63504E'
@@ -257,6 +263,8 @@ schemes:
       magenta:    '0xF6A73B'
       cyan:       '0xFAD42E'
       white:      '0xedc29a'
+    
+    # Bright colors
     bright:
       black:      '0xa5876b'
       red:        '0x63504E'
@@ -822,10 +830,10 @@ key_bindings:
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
   #- { key: L,         mods: Control, mode: ~Vi|~Search, chars: "\x0c"          }
-  #- { key: PageUp,    mods: Shift,   mode: ~Alt,        action: ScrollPageUp,  }
-  #- { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
-  #- { key: Home,      mods: Shift,   mode: ~Alt,        action: ScrollToTop,   }
-  #- { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
+  - { key: PageUp,    mods: Shift,    action: ScrollPageUp,  }
+  - { key: PageDown,  mods: Shift,    action: ScrollPageDown }
+  - { key: Home,      mods: Shift,    action: ScrollToTop,   }
+  - { key: End,       mods: Shift,    action: ScrollToBottom }
   
   - { key: Key0, mods: Control, action: ResetFontSize }
 
