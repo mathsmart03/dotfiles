@@ -2,4 +2,3 @@
 # command: pacman -Qen
 # aur applications
 # command: pacman -Qm
-asus-touchpad-numpad-driver
