@@ -8,7 +8,7 @@ SETUVAR _fish_abbr_c:cargo
 SETUVAR _fish_abbr_cl:clear
 SETUVAR _fish_abbr_cpustat:auto\x2dcpufreq\x20\x2d\x2dstats
 SETUVAR _fish_abbr_cr:cargo\x20run\x20\x2d\x2dquiet
-SETUVAR _fish_abbr_ls:exa\x20\x2d\x2dicons
+SETUVAR _fish_abbr_ls:exa
 SETUVAR _fish_abbr_nfet:neofetch
 SETUVAR _fish_abbr_pac:pacman
 SETUVAR _fish_abbr_restart:reboot
@@ -17,7 +17,7 @@ SETUVAR _fish_abbr_sysdis:systemctl\x20disable
 SETUVAR _fish_abbr_sysen:systemctl\x20enable
 SETUVAR _fish_abbr_systat:systemctl\x20status
 SETUVAR _fish_abbr_systop:systemctl\x20stop
-SETUVAR _fish_abbr_systrt:systecmtl\x20start
+SETUVAR _fish_abbr_systrt:systemctl\x20start
 SETUVAR _fish_abbr_update:sudo\x20pacman\x20\x2dSyu
 SETUVAR _fish_abbr_yeet:sudo\x20pacman\x20\x2dRsn
 SETUVAR _fish_abbr_yoink:sudo\x20pacman\x20\x2dS

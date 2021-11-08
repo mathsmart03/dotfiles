@@ -97,7 +97,7 @@
 
     "memory": {
         "interval": 5,
-        "format": "  {}%", // Icon: memory
+        "format": "  {}%", // Icon: memory
         "states": {
             "warning": 70,
             "critical": 90
@@ -106,7 +106,7 @@
 
     "disk": {
         "interval": 5,
-	"format": "  {percentage_used:2}% ",
+	"format": "   {percentage_used:2}% ",
 	"path": "/"
     },
 
