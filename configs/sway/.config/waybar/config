@@ -28,10 +28,10 @@
     "modules-right": [
         "pulseaudio",
         "network",
-	"disk",
         "memory",
         "cpu",
         "temperature",
+	// "disk",
         // "custom/keyboard-layout",
         "battery",
         "tray",
@@ -106,7 +106,7 @@
 
     "disk": {
         "interval": 5,
-	"format": "   {percentage_used:2}% ",
+	"format": "  {percentage_used:2}%",
 	"path": "/"
     },
 

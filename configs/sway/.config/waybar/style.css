@@ -130,6 +130,10 @@
     animation-duration: 2s;
 }
 
+#disk {
+  /* No styles */
+}
+
 #mode {
     background: #64727D;
     border-top: 2px solid white;
