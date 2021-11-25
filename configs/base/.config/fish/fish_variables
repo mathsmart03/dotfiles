@@ -3,6 +3,7 @@
 SETUVAR --export RUST_BACKTRACE:full
 SETUVAR --export _JAVA_AWT_WM_NONREPARENTING:1
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_blctl:bluetoothctl
 SETUVAR _fish_abbr_btop:bpytop
 SETUVAR _fish_abbr_c:cargo
 SETUVAR _fish_abbr_cb:cargo\x20build

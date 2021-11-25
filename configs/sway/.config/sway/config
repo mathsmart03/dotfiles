@@ -101,9 +101,11 @@ input type:touchpad {
 
 # Enable floating
 for_window [class="SpeedCrunch"] floating enable
+for_window [instance="MultiMC"] floating enable
 
 # Enable title bar
 for_window [class="SpeedCrunch"] border normal
+for_window [instance="MultiMC"] border normal 
 
 ### Key bindings
 #
