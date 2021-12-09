@@ -17,6 +17,15 @@ client.urgent           $base08 $base08 $base00 $base08 $base08
 client.placeholder      $base00 $base00 $base05 $base00 $base00
 client.background       $base07
 
+# Startup
+workspace 1
+exec audacious
+for_window [class="Audacious"] move scratchpad
+exec vivaldi-stable
+
+workspace 2
+exec $term
+
 # gaps
 gaps inner 10
 gaps outer 5

@@ -3,4 +3,3 @@
 lm_sensors
 # aur applications
 # command: pacman -Qm
-asus-touchpad-numpad-driver

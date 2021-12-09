@@ -1,6 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export RUST_BACKTRACE:full
 SETUVAR --export _JAVA_AWT_WM_NONREPARENTING:1
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_blctl:bluetoothctl
@@ -9,8 +8,9 @@ SETUVAR _fish_abbr_c:cargo
 SETUVAR _fish_abbr_cb:cargo\x20build
 SETUVAR _fish_abbr_cl:clear
 SETUVAR _fish_abbr_cpustat:auto\x2dcpufreq\x20\x2d\x2dstats
-SETUVAR _fish_abbr_cr:cargo\x20run\x20\x2d\x2dquiet
+SETUVAR _fish_abbr_cr:cargo\x20run
 SETUVAR _fish_abbr_ls:exa\x20\x2dF
+SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
 SETUVAR _fish_abbr_nfet:neofetch
 SETUVAR _fish_abbr_pac:pacman
 SETUVAR _fish_abbr_restart:reboot
