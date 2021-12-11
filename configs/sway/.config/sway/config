@@ -62,8 +62,8 @@ output HDMI-A-1 position 1920,0
 
 exec swayidle -w \
 	timeout 1800 'swaylock -f' \
-	timeout 1805 'swaymsg "output * dpms off"' \
-		resume 'swaymsg "output * dpms on"' \
+	# timeout 1805 'swaymsg "output * dpms off"' \
+	# 	resume 'swaymsg "output * dpms on"' \
 	before-sleep 'playerctl pause' \
 	before-sleep 'swaylock -f'
 
@@ -137,6 +137,15 @@ for_window [instance="MultiMC"] border normal
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+#
+# Screencapture
+#
+# screenshot monitor to ~/Pictures/Screenshots
+bindsym Print exec grim -o "$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')" $HOME/Pictures/Screenshots/$(date +%+m:%+d:%+Y_%+H:%+M:%+S).png
+# screenshot selected application to ~/Pictures/Screenshots
+bindsym Shift+Print exec grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.focused?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"')" $HOME/Pictures/Screenshots/$(date +%+m:%+d:%+Y_%+H:%+M:%+S).png
+# screenshot slurp selection to clipboard
+bindsym Shift+Control+Print exec grim -g "$(slurp)" - | wl-copy
 # 
 # Control volume, monitor brightness, media players
 #
