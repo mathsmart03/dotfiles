@@ -175,8 +175,8 @@ font:
 draw_bold_text_with_bright_colors: false
 
 # color schemes
-schemes: 
-  tommorrow_night: &tommorrow_night 
+schemes:
+  tommorrow_night: &tommorrow_night
     # Default colors
     primary:
       background: '#1d1f21'
@@ -247,12 +247,12 @@ schemes:
     primary:
       background: '0x0a1124'
       foreground: '0xedc29a'
-     
+
     # Colors the cursor will use if `custom_cursor_colors` is true
     cursor:
       text:       '0x0a1124'
       cursor:     '0xedc29a'
-    
+
     # Normal colors
     normal:
       black:      '0x0a1124'
@@ -263,7 +263,7 @@ schemes:
       magenta:    '0xF6A73B'
       cyan:       '0xFAD42E'
       white:      '0xedc29a'
-    
+
     # Bright colors
     bright:
       black:      '0xa5876b'
@@ -274,7 +274,7 @@ schemes:
       magenta:    '0xF6A73B'
       cyan:       '0xFAD42E'
       white:      '0xedc29a'
-  
+
   colors: &base16_tommorrow_night_eighties_256
     # Default colors
     primary:
@@ -321,7 +321,7 @@ colors: *base16_tommorrow_night_eighties_256
 # Colors (Tomorrow Night)
 # colors:
   # Default colors
-  # primary: 
+  # primary:
   #   background: '0x181a20'
   #   foreground: '0xeeffff'
 
@@ -875,7 +875,7 @@ key_bindings:
   - { key: PageDown,  mods: Shift,    action: ScrollPageDown }
   - { key: Home,      mods: Shift,    action: ScrollToTop,   }
   - { key: End,       mods: Shift,    action: ScrollToBottom }
-  
+
   - { key: Key0, mods: Control, action: ResetFontSize }
 
   - { key: Equals, mods: Control, action: IncreaseFontSize }
