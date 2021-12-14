@@ -27,6 +27,15 @@ SETUVAR _fish_abbr_systat:systemctl\x20status
 SETUVAR _fish_abbr_systl:systemctl
 SETUVAR _fish_abbr_systop:systemctl\x20stop
 SETUVAR _fish_abbr_systrt:systemctl\x20start
+SETUVAR _fish_abbr_t:todo
+SETUVAR _fish_abbr_ta:todo\x20add
+SETUVAR _fish_abbr_td:todo\x20done
+SETUVAR _fish_abbr_te:todo\x20edit
+SETUVAR _fish_abbr_tm:todo\x20move
+SETUVAR _fish_abbr_tr:todo\x20remove
+SETUVAR _fish_abbr_ts:todo\x20show
+SETUVAR _fish_abbr_tsl:todo\x20select
+SETUVAR _fish_abbr_tud:todo\x20undone
 SETUVAR _fish_abbr_update:sudo\x20pacman\x20\x2dSyu
 SETUVAR _fish_abbr_yeet:sudo\x20pacman\x20\x2dRsn
 SETUVAR _fish_abbr_yoink:sudo\x20pacman\x20\x2dS

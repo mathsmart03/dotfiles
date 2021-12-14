@@ -1,3 +1,3 @@
 function bonsai
-    cbonsai -l -t 0.2 -i -w 5
+    cbonsai -S -t 1 -w 60
 end

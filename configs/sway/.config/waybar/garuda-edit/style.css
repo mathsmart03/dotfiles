@@ -45,11 +45,11 @@ nord15 #b48ead
     border: 0;
     border-radius: 0;
     padding: 0 0;
-    font-family:UbuntuMono;
-    font-size: 15px;
+    font-family: Cantarell;
+    font-size: 14px;
     margin-right: 5px;
     margin-left: 5px;
-    padding-bottom:3px;
+    padding-bottom: 3px;
    }
 
 window#waybar {
@@ -57,12 +57,12 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 2px 0px;
+    padding: 1px 0px;
     border-bottom: 2px;
     color: #eceff4;
     border-color: #d8dee9;
     border-style: solid;
-    margin-top:2px;
+    margin-top: 3px;
 }
 
 #workspaces button.focused {
@@ -74,7 +74,7 @@ window#waybar {
 }
 
 #clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman {
-    padding: 0 3px;
+    padding: 0 1px;
     border-bottom: 2px;
     border-style: solid;
 }

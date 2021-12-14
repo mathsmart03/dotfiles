@@ -18,8 +18,16 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'filipdutescu/renamer.nvim', {'branch': 'master'}
 " autosave
 Plug 'Pocco81/AutoSave.nvim', {'branch': 'main'}
-" visual git
+" comment
+Plug 'numToStr/Comment.nvim'
+" auto-pair
+Plug 'jiangmiao/auto-pairs'
+Plug 'machakann/vim-sandwich'
+" git
+Plug 'nvim-lua/plenary.nvim'
 Plug 'tanvirtin/vgit.nvim', {'branch': 'main'}
+Plug 'lewis6991/gitsigns.nvim', {'branch': 'main'}
+Plug 'sindrets/diffview.nvim', {'branch': 'main'}
 " CHAD filesystem
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 " statusline
@@ -27,7 +35,6 @@ Plug 'nvim-lualine/lualine.nvim'
 
 " Optional
 Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Collection of common configurations for the Nvim LSP client
@@ -52,8 +59,10 @@ Plug 'hrsh7th/vim-vsnip'
 
 " color stuff
 Plug 'RRethy/nvim-base16'
-Plug 'ryanoasis/vim-devicons'
 Plug 'adelarsq/vim-emoji-icon-theme'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 " base16 color setup
@@ -101,6 +110,13 @@ lua <<EOF
         exclude = {} -- tabout will ignore these filetypes
 }
 EOF
+
+" comment setup
+lua require('Comment').setup()
+
+" git setup
+lua require('vgit').setup()
+lua require('gitsigns').setup()
 
 " chadtree setup
 nnoremap <leader>v <cmd>CHADopen<cr>

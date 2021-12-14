@@ -37,6 +37,8 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term alacritty
+# browser
+set $browser vivaldi-stable
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -107,7 +109,7 @@ for_window [instance="MultiMC"] floating enable
 
 # Enable title bar
 for_window [class="SpeedCrunch"] border normal
-for_window [instance="MultiMC"] border normal 
+for_window [instance="MultiMC"] border normal
 
 ### Key bindings
 #
@@ -115,6 +117,9 @@ for_window [instance="MultiMC"] border normal
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+
+    # Start a the browser
+    bindsym $mod+Alt+Return exec $browser
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -146,7 +151,7 @@ bindsym Print exec grim -o "$(swaymsg -t get_outputs | jq -r '.[] | select(.focu
 bindsym Shift+Print exec grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.focused?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"')" $HOME/Pictures/Screenshots/$(date +%+m:%+d:%+Y_%+H:%+M:%+S).png
 # screenshot slurp selection to clipboard
 bindsym Shift+Control+Print exec grim -g "$(slurp)" - | wl-copy
-# 
+#
 # Control volume, monitor brightness, media players
 #
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
