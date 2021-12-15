@@ -9,6 +9,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " rainbow parentheses
 Plug 'p00f/nvim-ts-rainbow'
+" show indent
+Plug 'Yggdroot/indentLine'
 " tabout
 Plug 'abecodes/tabout.nvim'
 " tidy whitespace
@@ -23,6 +25,8 @@ Plug 'numToStr/Comment.nvim'
 " auto-pair
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
+" floating terminal
+Plug 'numToStr/FTerm.nvim'
 " git
 Plug 'nvim-lua/plenary.nvim'
 Plug 'tanvirtin/vgit.nvim', {'branch': 'main'}
@@ -32,6 +36,8 @@ Plug 'sindrets/diffview.nvim', {'branch': 'main'}
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 " statusline
 Plug 'nvim-lualine/lualine.nvim'
+" startup
+Plug 'goolord/alpha-nvim', {'branch': 'main'}
 
 " Optional
 Plug 'nvim-lua/popup.nvim'
@@ -123,6 +129,9 @@ nnoremap <leader>v <cmd>CHADopen<cr>
 
 " status line setup
 lua require('lualine').setup()
+
+" startup setup
+lua require('alpha').setup(require'alpha.themes.startify'.opts)
 
 "
 " LSP/Rust setup
