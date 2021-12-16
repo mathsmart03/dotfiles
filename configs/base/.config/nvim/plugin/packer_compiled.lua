@@ -225,7 +225,7 @@ _G.packer_plugins = {
     url = "https://github.com/filipdutescu/renamer.nvim"
   },
   ["rust-tools.nvim"] = {
-    config = { "\27LJ\1\2<\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\15rust-tools\frequire\0" },
+    config = { "\27LJ\1\2Ü\2\0\0\a\0\18\0\0234\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\3\0003\2\b\0003\3\3\0003\4\4\0:\4\5\0033\4\6\0:\4\a\3:\3\t\0023\3\15\0003\4\r\0003\5\v\0003\6\n\0:\6\f\5:\5\14\4:\4\16\3:\3\17\2;\2\1\1>\0\2\1G\0\1\0\vserver\rsettings\1\0\0\18rust-analyzer\1\0\0\16checkOnSave\1\0\0\1\0\1\fcommand\vclippy\ntools\1\0\0\16inlay_hints\1\0\3\27parameter_hints_prefix\5\23other_hints_prefix\5\25show_parameter_hints\1\14runnables\1\0\1\18use_telescope\2\1\0\2\23hover_with_actions\2\17autoSetHints\2\nsetup\15rust-tools\frequire\0" },
     loaded = true,
     path = "/home/rejyr/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
@@ -323,7 +323,7 @@ try_loadstring('\27LJ\1\2¾\2\0\0\a\0\15\1"4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\4\
 time([[Config for renamer.nvim]], false)
 -- Config for: rust-tools.nvim
 time([[Config for rust-tools.nvim]], true)
-try_loadstring("\27LJ\1\2<\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\15rust-tools\frequire\0", "config", "rust-tools.nvim")
+try_loadstring("\27LJ\1\2Ü\2\0\0\a\0\18\0\0234\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\3\0003\2\b\0003\3\3\0003\4\4\0:\4\5\0033\4\6\0:\4\a\3:\3\t\0023\3\15\0003\4\r\0003\5\v\0003\6\n\0:\6\f\5:\5\14\4:\4\16\3:\3\17\2;\2\1\1>\0\2\1G\0\1\0\vserver\rsettings\1\0\0\18rust-analyzer\1\0\0\16checkOnSave\1\0\0\1\0\1\fcommand\vclippy\ntools\1\0\0\16inlay_hints\1\0\3\27parameter_hints_prefix\5\23other_hints_prefix\5\25show_parameter_hints\1\14runnables\1\0\1\18use_telescope\2\1\0\2\23hover_with_actions\2\17autoSetHints\2\nsetup\15rust-tools\frequire\0", "config", "rust-tools.nvim")
 time([[Config for rust-tools.nvim]], false)
 -- Config for: tabout.nvim
 time([[Config for tabout.nvim]], true)
