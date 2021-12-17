@@ -1,3 +1,11 @@
+-- auto packer compile
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]])
+
 return require('packer').startup(function()
     -- package manager - packer
     use 'wbthomason/packer.nvim'
@@ -29,6 +37,8 @@ return require('packer').startup(function()
      end
     }
 
+	-- underline words/lines on cursor
+	use 'yamatsum/nvim-cursorline'
 
     -- show indent
     use 'Yggdroot/indentLine'
@@ -114,6 +124,16 @@ return require('packer').startup(function()
     use {
 		'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim'
     }
+
+	-- which key for commands
+	use {
+	    "folke/which-key.nvim",
+	    config = function()
+			require('which-key').setup()
+			vim.cmd([[set timeoutlen=500]])
+		end
+	}
+
     -- CHAD filesystem
     use {
 		'ms-jpq/chadtree',
