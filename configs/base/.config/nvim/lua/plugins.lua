@@ -6,6 +6,7 @@ vim.cmd([[
   augroup end
 ]])
 
+
 return require('packer').startup(function()
     -- package manager - packer
     use 'wbthomason/packer.nvim'
@@ -37,8 +38,24 @@ return require('packer').startup(function()
      end
     }
 
+	-- zen mode
+	use {
+		"folke/zen-mode.nvim",
+		config = function() require('zen-mode').setup() end
+	}
+	use {
+		"folke/twilight.nvim",
+		config = function() require('twilight').setup() end
+	}
+
 	-- underline words/lines on cursor
 	use 'yamatsum/nvim-cursorline'
+
+	-- smooth scrolling
+	use {
+		'karb94/neoscroll.nvim',
+		config = function() require('neoscroll').setup() end
+	}
 
     -- show indent
     use 'Yggdroot/indentLine'
@@ -81,9 +98,9 @@ return require('packer').startup(function()
         branch = 'master',
         nequires = {'nvim-lua/plenary.nvim'},
         config = function() require('renamer').setup {
-            vim.api.nvim_set_keymap('i', '<F2>', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true }),
-            vim.api.nvim_set_keymap('n', '<Leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true }),
-            vim.api.nvim_set_keymap('v', '<Leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true }),
+            vim.api.nvim_set_keymap('i', '<F2>', '<cmd>lua require("renamer").rename()<CR>', { noremap = true, silent = true }),
+            vim.api.nvim_set_keymap('n', '<Leader>rn', '<cmd>lua require("renamer").rename()<CR>', { noremap = true, silent = true }),
+            vim.api.nvim_set_keymap('v', '<Leader>rn', '<cmd>lua require("renamer").rename()<CR>', { noremap = true, silent = true }),
         }
         end
     }
@@ -102,7 +119,21 @@ return require('packer').startup(function()
     use 'machakann/vim-sandwich'
 
     -- floating terminal
-    use 'numToStr/FTerm.nvim'
+	use {
+		'numToStr/FTerm.nvim',
+		config = function()
+			vim.api.nvim_set_keymap('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', { noremap = true, silent = true })
+		end
+	}
+
+	-- context
+	use {
+		'romgrk/nvim-treesitter-context',
+		requires = {
+			'nvim-treesitter/nvim-treesitter',
+		},
+	}
 
     -- git
     use({
@@ -140,7 +171,7 @@ return require('packer').startup(function()
 		branch = 'chad',
     	run = 'python3 -m chadtree deps',
     	config = function()
-    	    vim.api.nvim_set_keymap('n', '<Leader>v', '<cmd>CHADopen<cr>', { noremap = true, silent = true })
+    	    vim.api.nvim_set_keymap('n', '<Leader>v', '<cmd>CHADopen<CR>', { noremap = true, silent = true })
         end
     }
 
@@ -150,6 +181,19 @@ return require('packer').startup(function()
         requires = {'kyazdani42/nvim-web-devicons', opt = true},
 		config = function() require('lualine').setup() end
     }
+
+	-- tabline
+	use {
+		'akinsho/bufferline.nvim',
+		requires = 'kyazdani42/nvim-web-devicons',
+		config = function()
+			require("bufferline").setup{}
+
+			-- keybinds
+    	    vim.api.nvim_set_keymap('n', 'b[', '<cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
+    	    vim.api.nvim_set_keymap('n', 'b]', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+		end
+	}
 
     -- startup
     use {
@@ -174,6 +218,13 @@ return require('packer').startup(function()
      	}
         end
     }
+
+	use {
+		'kosayoda/nvim-lightbulb',
+		config = function()
+			vim.cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
+		end
+	}
 
     -- Collection of common configurations for the Nvim LSP client
     use {
@@ -246,6 +297,13 @@ return require('packer').startup(function()
         end
     }
 
+	-- diagnostic list
+	use {
+	  "folke/trouble.nvim",
+	  requires = "kyazdani42/nvim-web-devicons",
+	  config = function() require("trouble").setup {} end
+	}
+
     -- Adds extra functionality over rust analyzer
     use {
         'simrat39/rust-tools.nvim',
@@ -298,5 +356,6 @@ return require('packer').startup(function()
     use 'adelarsq/vim-devicons-emoji'
     use 'adelarsq/vim-emoji-icon-theme'
     use 'kyazdani42/nvim-web-devicons'
+	use 'folke/lsp-colors.nvim'
 
 end)
