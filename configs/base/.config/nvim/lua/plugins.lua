@@ -40,6 +40,9 @@ return require('packer').startup(function()
 	-- highlight yank
 	use 'machakann/vim-highlightedyank'
 
+	-- highlight range in command
+	use 'winston0410/cmd-parser.nvim'
+
 	-- zen mode
 	use {
 		'folke/zen-mode.nvim',
@@ -52,6 +55,20 @@ return require('packer').startup(function()
 		config = function()
 			require('twilight').setup()
 		end,
+	}
+
+	-- transparent neovim
+	use {
+		'xiyaowong/nvim-transparent',
+		enable = true,
+		config = function()
+			require('transparent').setup {
+				enable = true,
+				exclude = {
+					SignColumn,
+				}
+			}
+		end
 	}
 
 	-- underline words/lines on cursor
@@ -167,6 +184,16 @@ return require('packer').startup(function()
 	-- auto-pair
 	use 'jiangmiao/auto-pairs'
 	use 'machakann/vim-sandwich'
+
+
+
+	-- surround
+	use {
+		'blackCauldron7/surround.nvim',
+		config = function()
+			require('surround').setup { mappings_style = 'surround' }
+		end,
+	}
 
 	-- floating terminal
 	use {
