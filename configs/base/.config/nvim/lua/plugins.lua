@@ -37,6 +37,9 @@ return require('packer').startup(function()
 		end,
 	}
 
+	-- highlight yank
+	use 'machakann/vim-highlightedyank'
+
 	-- zen mode
 	use {
 		'folke/zen-mode.nvim',
@@ -150,6 +153,17 @@ return require('packer').startup(function()
 		end,
 	}
 
+	-- better registers
+	use {
+		'AckslD/nvim-neoclip.lua',
+		requires = { 'nvim-telescope/telescope.nvim' },
+		config = function()
+			require('neoclip').setup()
+			require('telescope').load_extension 'neoclip'
+			vim.api.nvim_set_keymap('n', '<leader>c', '<cmd>Telescope neoclip<cr>', { noremap = true, silent = true })
+		end,
+	}
+
 	-- auto-pair
 	use 'jiangmiao/auto-pairs'
 	use 'machakann/vim-sandwich'
@@ -243,8 +257,8 @@ return require('packer').startup(function()
 			require('bufferline').setup {}
 
 			-- keybinds
-			vim.api.nvim_set_keymap('n', 'b[', '<cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
-			vim.api.nvim_set_keymap('n', 'b]', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>[', '<cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>]', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, silent = true })
 		end,
 	}
 
@@ -261,7 +275,37 @@ return require('packer').startup(function()
 	use {
 		'nvim-telescope/telescope.nvim',
 		requires = { 'nvim-lua/plenary.nvim' },
+		config = function()
+			vim.api.nvim_set_keymap(
+				'n',
+				'<leader>ff',
+				'<cmd>Telescope find_files<cr>',
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<leader>ffh',
+				'<cmd>Telescope find_files hidden=true<cr>',
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<leader>fg',
+				'<cmd>Telescope live_grep<cr>',
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap(
+				'n',
+				'<leader>fh',
+				'<cmd>Telescope help_tags<cr>',
+				{ noremap = true, silent = true }
+			)
+		end,
 	}
+
+	-- move to directory
+	use 'airblade/vim-rooter'
 
 	-- Formmater
 	use {
