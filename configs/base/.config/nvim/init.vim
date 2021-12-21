@@ -1,3 +1,10 @@
+"
+" Plugins
+"
+" bootstrap packer
+lua require('bootstrap')
+lua require('plugins')
+
 " Line Numbers
 :set number relativenumber
 
@@ -7,10 +14,8 @@ set softtabstop=4
 set tabstop=4
 set noexpandtab
 
-"
-" Plugins
-"
-lua require('plugins')
+" map leader key to space
+let mapleader = ' '
 
 " base16 color setup
 let base16colorspace=256

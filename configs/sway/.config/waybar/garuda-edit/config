@@ -1,6 +1,6 @@
 {
     "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
+    "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 25,
     //"width": 1350, // Waybar width
     // Choose the order of the modules idle_inhibitor
