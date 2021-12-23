@@ -19,7 +19,7 @@ let mapleader = ' '
 
 " base16 color setup
 let base16colorspace=256
-colorscheme base16-gruvbox-dark-hard
+colorscheme tokyonight
 
 "
 " LSP/Rust setup

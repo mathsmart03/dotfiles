@@ -20,28 +20,177 @@ return require('packer').startup(function()
 		run = ':TSUpdate',
 	}
 
-	-- rainbow parentheses
+	--
+	--
+	-- GUI
+	--
+	--
+
+	-- startup
 	use {
-		'p00f/nvim-ts-rainbow',
+		'goolord/alpha-nvim',
+		requires = { 'kyazdani42/nvim-web-devicons' },
 		config = function()
-			require('nvim-treesitter.configs').setup {
-				rainbow = {
-					enable = true,
-					-- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
-					extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-					max_file_lines = nil, -- Do not enable for files with more than n lines, int
-					-- colors = {}, -- table of hex strings
-					-- termcolors = {} -- table of colour name strings
-				},
+			require('alpha').setup(require('alpha.themes.startify').opts)
+		end,
+	}
+
+	-- which key for commands
+	use {
+		'folke/which-key.nvim',
+		config = function()
+			require('which-key').setup()
+			vim.cmd [[set timeoutlen=500]]
+		end,
+	}
+
+	-- show indent
+	use {
+		'lukas-reineke/indent-blankline.nvim',
+		config = function()
+			vim.opt.list = true
+			vim.opt.listchars:append 'space:⋅'
+			vim.opt.listchars:append 'eol:↴'
+
+			require('indent_blankline').setup {
+				space_char_blankline = ' ',
+				show_current_context = true,
+				show_current_context_start = true,
 			}
 		end,
 	}
 
-	-- highlight yank
-	use 'machakann/vim-highlightedyank'
+	-- function signature context
+	use {
+		'romgrk/nvim-treesitter-context',
+		requires = {
+			'nvim-treesitter/nvim-treesitter',
+		},
+	}
 
-	-- highlight range in command
-	use 'winston0410/cmd-parser.nvim'
+	-- tree view for symbols
+	use {
+		'simrat39/symbols-outline.nvim',
+		config = function()
+			vim.api.nvim_set_keymap('n', '<leader>so', '<cmd>SymbolsOutline<cr>', { noremap = true, silent = true })
+		end,
+	}
+
+	-- floating terminal
+	use {
+		'numToStr/FTerm.nvim',
+		config = function()
+			vim.api.nvim_set_keymap(
+				'n',
+				'<A-i>',
+				'<CMD>lua require("FTerm").toggle()<CR>',
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				't',
+				'<A-i>',
+				'<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>',
+				{ noremap = true, silent = true }
+			)
+		end,
+	}
+
+	-- CHAD filesystem
+	use {
+		'ms-jpq/chadtree',
+		branch = 'chad',
+		run = 'python3 -m chadtree deps',
+		config = function()
+			vim.api.nvim_set_keymap('n', '<Leader>v', '<cmd>CHADopen<CR>', { noremap = true, silent = true })
+		end,
+	}
+
+	--
+	-- git
+	--
+
+	use {
+		'tanvirtin/vgit.nvim',
+		event = 'BufWinEnter',
+		requires = {
+			'nvim-lua/plenary.nvim',
+		},
+		config = function()
+			require('vgit').setup()
+		end,
+	}
+	use {
+		'lewis6991/gitsigns.nvim',
+		requires = {
+			'nvim-lua/plenary.nvim',
+		},
+		config = function()
+			require('gitsigns').setup()
+		end,
+		-- tag = 'release' -- To use the latest release
+	}
+	use {
+		'sindrets/diffview.nvim',
+		requires = 'nvim-lua/plenary.nvim',
+	}
+
+	--
+	-- tab/status lines
+	--
+	-- statusline
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+		config = function()
+			require('lualine').setup()
+		end,
+	}
+
+	-- tabline
+	use {
+		'akinsho/bufferline.nvim',
+		requires = 'kyazdani42/nvim-web-devicons',
+		config = function()
+			require('bufferline').setup {}
+
+			-- keybinds
+			vim.api.nvim_set_keymap('n', '<leader>[', '<cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>]', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+		end,
+	}
+
+	--
+	--
+	-- Color
+	--
+	--
+
+	-- compatibility
+	use 'tiagofumo/vim-nerdtree-syntax-highlight'
+	use 'folke/lsp-colors.nvim'
+
+	-- icons
+	use 'ryanoasis/vim-devicons'
+	use 'adelarsq/vim-devicons-emoji'
+	use 'adelarsq/vim-emoji-icon-theme'
+	use 'kyazdani42/nvim-web-devicons'
+
+	-- colorchemes
+	use 'RRethy/nvim-base16'
+	use 'folke/tokyonight.nvim'
+
+	--
+	--
+	-- eye candy
+	--
+	--
+	-- smooth scrolling
+	use {
+		'karb94/neoscroll.nvim',
+		config = function()
+			require('neoscroll').setup()
+		end,
+	}
 
 	-- zen mode
 	use {
@@ -66,35 +215,85 @@ return require('packer').startup(function()
 				enable = true,
 				exclude = {
 					SignColumn,
-				}
+				},
 			}
-		end
+		end,
 	}
+
+	-- rainbow parentheses
+	use {
+		'p00f/nvim-ts-rainbow',
+		config = function()
+			require('nvim-treesitter.configs').setup {
+				rainbow = {
+					enable = true,
+					-- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
+					extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+					max_file_lines = nil, -- Do not enable for files with more than n lines, int
+					-- colors = {}, -- table of hex strings
+					-- termcolors = {} -- table of colour name strings
+				},
+			}
+		end,
+	}
+
+	--
+	-- highlight
+	--
+	-- highlight yank
+	use 'machakann/vim-highlightedyank'
+
+	-- highlight range in command
+	use 'winston0410/cmd-parser.nvim'
 
 	-- underline words/lines on cursor
 	use 'yamatsum/nvim-cursorline'
 
-	-- smooth scrolling
+	--
+	--
+	-- Editor
+	--
+	--
+	-- move to directory
+	use 'airblade/vim-rooter'
+
+	-- autosave
+	use 'Pocco81/AutoSave.nvim'
+
+	-- tidy whitespace
 	use {
-		'karb94/neoscroll.nvim',
+		'McAuleyPenney/tidy.nvim',
+		event = 'BufWritePre',
+	}
+
+	-- comment
+	use {
+		'numToStr/Comment.nvim',
 		config = function()
-			require('neoscroll').setup()
+			require('Comment').setup()
 		end,
 	}
 
-	-- show indent
-	use {
-		'lukas-reineke/indent-blankline.nvim',
-		config = function()
-			vim.opt.list = true
-			vim.opt.listchars:append 'space:⋅'
-			vim.opt.listchars:append 'eol:↴'
+	-- auto-pair
+	use 'jiangmiao/auto-pairs'
+	use 'machakann/vim-sandwich'
 
-			require('indent_blankline').setup {
-				space_char_blankline = ' ',
-				show_current_context = true,
-				show_current_context_start = true,
-			}
+	-- surround
+	use {
+		'blackCauldron7/surround.nvim',
+		config = function()
+			require('surround').setup { mappings_style = 'surround' }
+		end,
+	}
+
+	-- better registers
+	use {
+		'AckslD/nvim-neoclip.lua',
+		requires = { 'nvim-telescope/telescope.nvim' },
+		config = function()
+			require('neoclip').setup()
+			require('telescope').load_extension 'neoclip'
+			vim.api.nvim_set_keymap('n', '<leader>c', '<cmd>Telescope neoclip<cr>', { noremap = true, silent = true })
 		end,
 	}
 
@@ -122,12 +321,6 @@ return require('packer').startup(function()
 				exclude = {}, -- tabout will ignore these filetypes
 			}
 		end,
-	}
-
-	-- tidy whitespace
-	use {
-		'McAuleyPenney/tidy.nvim',
-		event = 'BufWritePre',
 	}
 
 	-- vscode ui style renamer
@@ -158,181 +351,6 @@ return require('packer').startup(function()
 			}
 		end,
 	}
-
-	-- autosave
-	use 'Pocco81/AutoSave.nvim'
-
-	-- comment
-	use {
-		'numToStr/Comment.nvim',
-		config = function()
-			require('Comment').setup()
-		end,
-	}
-
-	-- better registers
-	use {
-		'AckslD/nvim-neoclip.lua',
-		requires = { 'nvim-telescope/telescope.nvim' },
-		config = function()
-			require('neoclip').setup()
-			require('telescope').load_extension 'neoclip'
-			vim.api.nvim_set_keymap('n', '<leader>c', '<cmd>Telescope neoclip<cr>', { noremap = true, silent = true })
-		end,
-	}
-
-	-- auto-pair
-	use 'jiangmiao/auto-pairs'
-	use 'machakann/vim-sandwich'
-
-
-
-	-- surround
-	use {
-		'blackCauldron7/surround.nvim',
-		config = function()
-			require('surround').setup { mappings_style = 'surround' }
-		end,
-	}
-
-	-- floating terminal
-	use {
-		'numToStr/FTerm.nvim',
-		config = function()
-			vim.api.nvim_set_keymap(
-				'n',
-				'<A-i>',
-				'<CMD>lua require("FTerm").toggle()<CR>',
-				{ noremap = true, silent = true }
-			)
-			vim.api.nvim_set_keymap(
-				't',
-				'<A-i>',
-				'<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>',
-				{ noremap = true, silent = true }
-			)
-		end,
-	}
-
-	-- context
-	use {
-		'romgrk/nvim-treesitter-context',
-		requires = {
-			'nvim-treesitter/nvim-treesitter',
-		},
-	}
-
-	-- git
-	use {
-		'tanvirtin/vgit.nvim',
-		event = 'BufWinEnter',
-		requires = {
-			'nvim-lua/plenary.nvim',
-		},
-		config = function()
-			require('vgit').setup()
-		end,
-	}
-	use {
-		'lewis6991/gitsigns.nvim',
-		requires = {
-			'nvim-lua/plenary.nvim',
-		},
-		config = function()
-			require('gitsigns').setup()
-		end,
-		-- tag = 'release' -- To use the latest release
-	}
-	use {
-		'sindrets/diffview.nvim',
-		requires = 'nvim-lua/plenary.nvim',
-	}
-
-	-- which key for commands
-	use {
-		'folke/which-key.nvim',
-		config = function()
-			require('which-key').setup()
-			vim.cmd [[set timeoutlen=500]]
-		end,
-	}
-
-	-- CHAD filesystem
-	use {
-		'ms-jpq/chadtree',
-		branch = 'chad',
-		run = 'python3 -m chadtree deps',
-		config = function()
-			vim.api.nvim_set_keymap('n', '<Leader>v', '<cmd>CHADopen<CR>', { noremap = true, silent = true })
-		end,
-	}
-
-	-- statusline
-	use {
-		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-		config = function()
-			require('lualine').setup()
-		end,
-	}
-
-	-- tabline
-	use {
-		'akinsho/bufferline.nvim',
-		requires = 'kyazdani42/nvim-web-devicons',
-		config = function()
-			require('bufferline').setup {}
-
-			-- keybinds
-			vim.api.nvim_set_keymap('n', '<leader>[', '<cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
-			vim.api.nvim_set_keymap('n', '<leader>]', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, silent = true })
-		end,
-	}
-
-	-- startup
-	use {
-		'goolord/alpha-nvim',
-		requires = { 'kyazdani42/nvim-web-devicons' },
-		config = function()
-			require('alpha').setup(require('alpha.themes.startify').opts)
-		end,
-	}
-
-	-- Fuzzy Finder
-	use {
-		'nvim-telescope/telescope.nvim',
-		requires = { 'nvim-lua/plenary.nvim' },
-		config = function()
-			vim.api.nvim_set_keymap(
-				'n',
-				'<leader>ff',
-				'<cmd>Telescope find_files<cr>',
-				{ noremap = true, silent = true }
-			)
-			vim.api.nvim_set_keymap(
-				'n',
-				'<leader>ffh',
-				'<cmd>Telescope find_files hidden=true<cr>',
-				{ noremap = true, silent = true }
-			)
-			vim.api.nvim_set_keymap(
-				'n',
-				'<leader>fg',
-				'<cmd>Telescope live_grep<cr>',
-				{ noremap = true, silent = true }
-			)
-			vim.api.nvim_set_keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { noremap = true, silent = true })
-			vim.api.nvim_set_keymap(
-				'n',
-				'<leader>fh',
-				'<cmd>Telescope help_tags<cr>',
-				{ noremap = true, silent = true }
-			)
-		end,
-	}
-
-	-- move to directory
-	use 'airblade/vim-rooter'
 
 	-- Formmater
 	use {
@@ -369,10 +387,96 @@ return require('packer').startup(function()
 		end,
 	}
 
+	-- movement
+	use {
+		'phaazon/hop.nvim',
+		branch = 'v1', -- optional but strongly recommended
+		config = function()
+			require('hop').setup { keys = 'etovxqpdygfblzhckisuran' }
+			-- keybinds
+			vim.api.nvim_set_keymap('n', '<leader>j', '<cmd>HopWord<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>jp', '<cmd>HopPattern<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>j1', '<cmd>HopChar1<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>j2', '<cmd>HopChar2<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>jl', '<cmd>HopLine<cr>', { noremap = true, silent = true })
+		end,
+	}
+
+	-- Fuzzy Finder
+	use {
+		'nvim-telescope/telescope.nvim',
+		requires = { 'nvim-lua/plenary.nvim' },
+		config = function()
+			vim.api.nvim_set_keymap(
+				'n',
+				'<leader>ff',
+				'<cmd>Telescope find_files<cr>',
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<leader>ffh',
+				'<cmd>Telescope find_files hidden=true<cr>',
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<leader>fg',
+				'<cmd>Telescope live_grep<cr>',
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap(
+				'n',
+				'<leader>fh',
+				'<cmd>Telescope help_tags<cr>',
+				{ noremap = true, silent = true }
+			)
+		end,
+	}
+
+	-- debugging TODO: set up
+	use {
+		'rcarriga/nvim-dap-ui',
+		requires = { 'mfussenegger/nvim-dap' },
+	}
+
+	--
+	--
+	-- lsp/language
+	--
+	--
+	-- lightbulb for code actions
 	use {
 		'kosayoda/nvim-lightbulb',
 		config = function()
 			vim.cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
+		end,
+	}
+
+	-- show diagnosticsc / lsp stuff
+	use {
+		'folke/trouble.nvim',
+		requires = 'kyazdani42/nvim-web-devicons',
+		config = function()
+			vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>TroubleToggle<cr>', { noremap = true, silent = true })
+			require('trouble').setup()
+		end,
+	}
+
+	-- spellcheck
+	use {
+		'lewis6991/spellsitter.nvim',
+		config = function()
+			require('spellsitter').setup()
+		end,
+	}
+
+	-- show function signature
+	use {
+		'ray-x/lsp_signature.nvim',
+		config = function()
+			require('lsp_signature').setup()
 		end,
 	}
 
@@ -458,11 +562,11 @@ return require('packer').startup(function()
 			'hrsh7th/cmp-nvim-lsp',
 			'hrsh7th/cmp-nvim-lua',
 			'hrsh7th/cmp-vsnip',
-			'hrsh7th/cmp-vsnip',
 			'hrsh7th/cmp-path',
 			'hrsh7th/cmp-buffer',
 			'hrsh7th/cmp-calc',
 			'saadparwaiz1/cmp_luasnip',
+			'hrsh7th/vim-vsnip', -- snippet engine
 		},
 		config = function()
 			local cmp = require 'cmp'
@@ -497,17 +601,23 @@ return require('packer').startup(function()
 					{ name = 'path' },
 					{ name = 'buffer' },
 					{ name = 'calc' },
+					{ name = 'crates' },
 				},
 			}
 		end,
 	}
 
-	-- diagnostic list
+	--
+	-- Rust
+	--
+
+	-- help manage rust depedencies
 	use {
-		'folke/trouble.nvim',
-		requires = 'kyazdani42/nvim-web-devicons',
+		'saecki/crates.nvim',
+		event = { 'BufRead Cargo.toml' },
+		requires = { 'nvim-lua/plenary.nvim' },
 		config = function()
-			require('trouble').setup {}
+			require('crates').setup()
 		end,
 	}
 
@@ -553,16 +663,4 @@ return require('packer').startup(function()
 			}
 		end,
 	}
-
-	-- Snippet engine
-	use 'hrsh7th/vim-vsnip'
-
-	-- color stuff
-	use 'RRethy/nvim-base16'
-	use 'tiagofumo/vim-nerdtree-syntax-highlight'
-	use 'ryanoasis/vim-devicons'
-	use 'adelarsq/vim-devicons-emoji'
-	use 'adelarsq/vim-emoji-icon-theme'
-	use 'kyazdani42/nvim-web-devicons'
-	use 'folke/lsp-colors.nvim'
 end)
