@@ -17,9 +17,9 @@ set noexpandtab
 " map leader key to space
 let mapleader = ' '
 
-" base16 color setup
+" color setup
 let base16colorspace=256
-colorscheme tokyonight
+colorscheme kanagawa
 
 "
 " LSP/Rust setup

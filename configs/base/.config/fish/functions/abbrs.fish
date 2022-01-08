@@ -20,9 +20,9 @@ function abbrs
 	abbr -a clt 'clear; todo'
 	# pacman
 	abbr -a pac pacman
-	abbr -a update 'sudo pacman -Syu'
-	abbr -a yeet 'sudo pacman -Rsn'
-	abbr -a yoink 'sudo pacman -S'
+	abbr -a update 'yay'
+	abbr -a yeet 'yay -Rsn'
+	abbr -a yoink 'yay -S'
 	# systemctl
 	abbr -a sleep 'systemctl suspend'
 	abbr -a sysdis 'systemctl disable'

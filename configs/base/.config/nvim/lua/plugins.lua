@@ -6,7 +6,7 @@ vim.cmd [[
   augroup end
 ]]
 
-return require('packer').startup(function()
+return require('packer').startup(function(use)
 	-- package manager - packer
 	use 'wbthomason/packer.nvim'
 
@@ -19,6 +19,9 @@ return require('packer').startup(function()
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate',
 	}
+
+	-- tetris lmao
+	use 'alec-gibson/nvim-tetris'
 
 	--
 	--
@@ -43,6 +46,15 @@ return require('packer').startup(function()
 			vim.cmd [[set timeoutlen=500]]
 		end,
 	}
+
+	-- -- command/search completion
+	-- use {
+	-- 	'gelguy/wilder.nvim',
+	-- 	run = ':UpdateRemotePlugins',
+	-- 	config = function()
+	-- 		vim.cmd [[call wilder#setup({'modes': [':', '/', '?']})]]
+	-- 	end,
+	-- }
 
 	-- show indent
 	use {
@@ -72,6 +84,9 @@ return require('packer').startup(function()
 	use {
 		'simrat39/symbols-outline.nvim',
 		config = function()
+			vim.g.symbols_outline = {
+				width = 50,
+			}
 			vim.api.nvim_set_keymap('n', '<leader>so', '<cmd>SymbolsOutline<cr>', { noremap = true, silent = true })
 		end,
 	}
@@ -109,16 +124,16 @@ return require('packer').startup(function()
 	-- git
 	--
 
-	use {
-		'tanvirtin/vgit.nvim',
-		event = 'BufWinEnter',
-		requires = {
-			'nvim-lua/plenary.nvim',
-		},
-		config = function()
-			require('vgit').setup()
-		end,
-	}
+	-- use {
+	-- 	'tanvirtin/vgit.nvim',
+	-- 	event = 'BufWinEnter',
+	-- 	requires = {
+	-- 		'nvim-lua/plenary.nvim',
+	-- 	},
+	-- 	config = function()
+	-- 		require('vgit').setup()
+	-- 	end,
+	-- }
 	use {
 		'lewis6991/gitsigns.nvim',
 		requires = {
@@ -175,9 +190,11 @@ return require('packer').startup(function()
 	use 'adelarsq/vim-emoji-icon-theme'
 	use 'kyazdani42/nvim-web-devicons'
 
-	-- colorchemes
-	use 'RRethy/nvim-base16'
-	use 'folke/tokyonight.nvim'
+	-- colorschemes
+	-- use 'RRethy/nvim-base16'
+	-- use 'folke/tokyonight.nvim'
+	use 'rebelot/kanagawa.nvim'
+	-- use 'catppuccin/nvim'
 
 	--
 	--
@@ -284,6 +301,23 @@ return require('packer').startup(function()
 		config = function()
 			require('surround').setup { mappings_style = 'surround' }
 		end,
+	}
+
+	-- open file at alst place
+	use {
+		'ethanholz/nvim-lastplace',
+		config = function()
+			require('nvim-lastplace').setup()
+		end,
+	}
+
+	-- session management
+	use {
+		'Shatur/neovim-session-manager',
+		requires = { 'nvim-telescope/telescope.nvim' },
+		config = function()
+			require('telescope').load_extension('sessions')
+		end
 	}
 
 	-- better registers
@@ -480,6 +514,35 @@ return require('packer').startup(function()
 		end,
 	}
 
+	-- install lsp servers
+	use {
+		'williamboman/nvim-lsp-installer',
+		requires = { 'neovim/nvim-lspconfig' },
+		config = function()
+			local lsp_installer = require 'nvim-lsp-installer'
+			lsp_installer.on_server_ready(function(server)
+				local servers = {
+					'pyright',
+					'sumneko_lua',
+				}
+
+				-- install servers
+				for _, name in pairs(servers) do
+					local server_is_found, server = lsp_installer.get_server(name)
+					if server_is_found then
+						if not server:is_installed() then
+							print('Installing ' .. name)
+							server:install()
+						end
+					end
+				end
+
+				local opts = {}
+				server:setup(opts)
+			end)
+		end,
+	}
+
 	-- Collection of common configurations for the Nvim LSP client
 	use {
 		'neovim/nvim-lspconfig',
@@ -506,7 +569,7 @@ return require('packer').startup(function()
 			)
 			vim.api.nvim_set_keymap(
 				'n',
-				'1gD',
+				'gD',
 				'<cmd>lua vim.lsp.buf.type_definition()<CR>',
 				{ noremap = true, silent = true }
 			)
@@ -543,13 +606,13 @@ return require('packer').startup(function()
 			vim.api.nvim_set_keymap(
 				'n',
 				'g[',
-				'<cmd>lua vim.lsp.buf.code_action()<CR>',
+				'<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>',
 				{ noremap = true, silent = true }
 			)
 			vim.api.nvim_set_keymap(
 				'n',
 				'g]',
-				'<cmd>lua vim.lsp.buf.code_action()<CR>',
+				'<cmd>lua vim.lsp.diagnostic.goto_next()<CR>',
 				{ noremap = true, silent = true }
 			)
 		end,
@@ -627,6 +690,9 @@ return require('packer').startup(function()
 		requires = { 'neovim/nvim-lspconfig' },
 		ft = 'rust',
 		config = function()
+			vim.api.nvim_set_keymap('n', '<leader>rr', '<cmd>RustRun<cr>', {noremap = true})
+			vim.api.nvim_set_keymap('n', '<leader>rrr', '<cmd>RustRunnnables<cr>', {noremap = true})
+			--
 			require('rust-tools').setup {
 				{
 					tools = {
