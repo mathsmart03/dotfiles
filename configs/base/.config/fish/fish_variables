@@ -6,7 +6,6 @@ SETUVAR --export TMUX:\x1d
 SETUVAR --export _JAVA_AWT_WM_NONREPARENTING:1
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_blctl:bluetoothctl
-SETUVAR _fish_abbr_btop:bpytop
 SETUVAR _fish_abbr_c:cargo
 SETUVAR _fish_abbr_ca:cargo\x20add
 SETUVAR _fish_abbr_cb:cargo\x20build
@@ -43,6 +42,7 @@ SETUVAR _fish_abbr_tud:todo\x20undone
 SETUVAR _fish_abbr_update:yay
 SETUVAR _fish_abbr_yeet:yay\x20\x2dRsn
 SETUVAR _fish_abbr_yoink:yay\x20\x2dS
+SETUVAR _fish_abbr_yoinkmp3:youtube\x2ddl\x20\x2dx\x20\x2d\x2daudio\x2dformat\x20mp3\x20\x2d\x2dprefer\x2dffmpeg
 SETUVAR base16_theme:tomorrow\x2dnight\x2deighties
 SETUVAR fish_color_autosuggestion:747369
 SETUVAR fish_color_cancel:\x2dr

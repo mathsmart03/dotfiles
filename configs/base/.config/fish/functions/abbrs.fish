@@ -1,12 +1,12 @@
 function abbrs
 	abbr -a blctl bluetoothctl
-	abbr -a btop bpytop
 	abbr -a cpustat 'auto-cpufreq --stats'
 	abbr -a ls 'exa -F'
 	abbr -a mkdir 'mkdir -p'
 	abbr -a n nvim
 	abbr -a nfet neofetch
 	abbr -a restart reboot
+	abbr -a yoinkmp3 youtube-dl -x --audio-format mp3 --prefer-ffmpeg
 	# cargo
 	abbr -a c cargo
 	abbr -a cb 'cargo build'
