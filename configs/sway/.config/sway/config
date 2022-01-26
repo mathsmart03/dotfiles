@@ -44,7 +44,7 @@ set $browser vivaldi-stable
 # on the original workspace that the command was run on.
 set $menu wofi --show run
 # font
-font pango: SourceCodePro Medium 12
+font pango: Iosevka Medium 12
 
 ### Output configuration
 #

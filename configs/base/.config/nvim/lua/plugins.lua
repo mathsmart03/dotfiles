@@ -38,6 +38,18 @@ return require('packer').startup(function(use)
 		end,
 	}
 
+	-- todo comment
+	use {
+		'folke/todo-comments.nvim',
+		requires = 'nvim-lua/plenary.nvim',
+		config = function()
+			require('todo-comments').setup()
+			vim.api.nvim_set_keymap('n', '<leader>tq', '<cmd>TodoQuickFix<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>tt', '<cmd>TodoTrouble<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>ft', '<cmd>TodoTelescope<cr>', { noremap = true, silent = true })
+		end
+	}
+
 	-- which key for commands
 	use {
 		'folke/which-key.nvim',
@@ -314,10 +326,7 @@ return require('packer').startup(function(use)
 	-- session management
 	use {
 		'Shatur/neovim-session-manager',
-		requires = { 'nvim-telescope/telescope.nvim' },
-		config = function()
-			require('telescope').load_extension('sessions')
-		end
+		requires = { 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope.nvim' },
 	}
 
 	-- better registers
@@ -690,8 +699,8 @@ return require('packer').startup(function(use)
 		requires = { 'neovim/nvim-lspconfig' },
 		ft = 'rust',
 		config = function()
-			vim.api.nvim_set_keymap('n', '<leader>rr', '<cmd>RustRun<cr>', {noremap = true})
-			vim.api.nvim_set_keymap('n', '<leader>rrr', '<cmd>RustRunnnables<cr>', {noremap = true})
+			vim.api.nvim_set_keymap('n', '<leader>rr', '<cmd>RustRun<cr>', { noremap = true })
+			vim.api.nvim_set_keymap('n', '<leader>rrr', '<cmd>RustRunnnables<cr>', { noremap = true })
 			--
 			require('rust-tools').setup {
 				{

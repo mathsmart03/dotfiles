@@ -1,11 +1,11 @@
 # space separated list of arch applications
 # command: pacman -Qen
-adobe-source-han-sans-jp-fonts alacritty asciiquarium audacious bat bluez bluez-utils btop bottom brightnessctl cmatrix cups dhcpcd discord exa fd fish fisher fzf gcc git github-cli gitui hdparm htop ifplugd jdk8-openjdk jq libreoffice-fresh man-db mpv neofetch neovim networkmanager noto-fonts noto-fonts-cjk noto-fonts-emoji npm os-prober python-pip playerctl pulseaudio pulseaudio-bluetooth pavucontrol-qt speedcrunch pacman-contrib python-pywall python-spotdl ripgrep torbrowser-launcher ttc-iosevka ttf-linux-libertine ttf-nerd-fonts-symbols unzip upower vivaldi wmname youtube-dl zellij zoxide
+adobe-source-han-sans-jp-fonts alacritty asciiquarium audacious bat bluez bluez-utils btop bottom brightnessctl cmatrix cups dhcpcd discord exa fd fish fisher fzf gcc git github-cli gitui hdparm htop ifplugd jdk8-openjdk jq libreoffice-fresh man-db mpv neofetch neovim networkmanager noto-fonts noto-fonts-cjk noto-fonts-emoji npm os-prober p7zip python-pip playerctl pulseaudio pulseaudio-bluetooth pavucontrol-qt speedcrunch pacman-contrib python-pywall python-spotdl ripgrep torbrowser-launcher ttc-iosevka ttf-linux-libertine ttf-nerd-fonts-symbols unzip upower vivaldi wmname youtube-dl zellij zoxide
 
 
 # aur applications
 # command: pacman -Qm
-auto-cpufreq cbonsai clion clion-cmake clion-gdb clion-jre clion-lldb laptop-mode-tools logiops-git lunar-client multimc-bin pipes-rs-git obsidian stylua yay
+auto-cpufreq cbonsai clion clion-cmake clion-gdb clion-jre clion-lldb laptop-mode-tools logiops-git lunar-client multimc-bin pipes-rs-git obsidian stylua tetrio-desktop yay
 
 # python applications in pip
 neovim
