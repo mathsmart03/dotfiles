@@ -6,7 +6,7 @@
     // Choose the order of the modules idle_inhibitor
     "modules-left": ["custom/launcher","sway/workspaces", "sway/mode", "sway/window"],
     // "modules-right": ["custom/pacman", "backlight", "custom/keyboard-layout", "cpu", "memory", "battery", "network", "pulseaudio","tray", "idle_inhibitor", "clock","custom/power"],
-    "modules-right": ["custom/pacman", "backlight", "custom/keyboard-layout", "cpu", "memory", "battery", "network", "pulseaudio","tray", "clock","custom/power"],
+    "modules-right": ["custom/todo", "custom/pacman", "backlight", "custom/keyboard-layout", "cpu", "memory", "battery", "network", "pulseaudio","tray", "clock","custom/power"],
 
  // Modules configuration
 
@@ -29,7 +29,8 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "sway/window": {
-        "format": "{}"
+        "format": "{}",
+		"icon": false
     },
     // "idle_inhibitor": {
     //     "format": "{icon}",
@@ -134,7 +135,11 @@
       	"signal": 1, // SIGHUP
       	"tooltip": false,
         "on-click": "~/.config/waybar/scripts/keyhint.sh",
-},
+	},
+	"custom/todo": {
+		"format": "{}",
+		"exec": "todo st -Du"
+	}
     // "custom/launcher": {
     //      "format":" ",
     //      "on-click": "exec nwg-drawer -c 7 -is 70 -spacing 23",

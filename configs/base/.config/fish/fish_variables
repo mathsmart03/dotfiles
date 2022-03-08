@@ -16,6 +16,8 @@ SETUVAR _fish_abbr_clg:clear\x3b\x20fish_greeting
 SETUVAR _fish_abbr_clt:clear\x3b\x20todo
 SETUVAR _fish_abbr_cpustat:auto\x2dcpufreq\x20\x2d\x2dstats
 SETUVAR _fish_abbr_cr:cargo\x20run
+SETUVAR _fish_abbr_ct:cargo\x20test
+SETUVAR _fish_abbr_cto:cargo\x20test\x20\x2d\x2d\x20\x2d\x2dshow\x2doutput
 SETUVAR _fish_abbr_ls:exa\x20\x2dF
 SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
 SETUVAR _fish_abbr_n:nvim
@@ -31,14 +33,9 @@ SETUVAR _fish_abbr_systl:systemctl
 SETUVAR _fish_abbr_systop:systemctl\x20stop
 SETUVAR _fish_abbr_systrt:systemctl\x20start
 SETUVAR _fish_abbr_t:todo
-SETUVAR _fish_abbr_ta:todo\x20add
-SETUVAR _fish_abbr_td:todo\x20done
-SETUVAR _fish_abbr_te:todo\x20edit
-SETUVAR _fish_abbr_tm:todo\x20move
-SETUVAR _fish_abbr_tr:todo\x20remove
-SETUVAR _fish_abbr_ts:todo\x20show
-SETUVAR _fish_abbr_tsl:todo\x20select
-SETUVAR _fish_abbr_tud:todo\x20undone
+SETUVAR _fish_abbr_ts:todo\x20show\x20\x2dtD
+SETUVAR _fish_abbr_tsd:todo\x20show\x20\x2dtDd
+SETUVAR _fish_abbr_tsf:todo\x20show\x20\x2dfdD
 SETUVAR _fish_abbr_update:yay
 SETUVAR _fish_abbr_yeet:yay\x20\x2dRsn
 SETUVAR _fish_abbr_yoink:yay\x20\x2dS

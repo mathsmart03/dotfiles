@@ -73,7 +73,7 @@ window#waybar {
     color: #ebcb8b;
 }
 
-#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman {
+#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman,#custom-todo {
     padding: 0 1px;
     border-bottom: 2px;
     border-style: solid;
@@ -167,7 +167,7 @@ window#waybar {
 
 #window{
     border-style: hidden;
-    margin-top:1px;
+    margin-top:8px;
 }
 #mode{
     margin-bottom:3px;
@@ -175,4 +175,8 @@ window#waybar {
 
 #custom-keyboard-layout{
    color:#d08770;
+}
+
+#custom-todo {
+	color:#ebcb8b
 }

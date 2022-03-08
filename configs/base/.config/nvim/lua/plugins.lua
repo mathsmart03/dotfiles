@@ -17,17 +17,48 @@ return require('packer').startup(function(use)
 	-- treesitter
 	use {
 		'nvim-treesitter/nvim-treesitter',
+		config = function()
+			rainbow = {
+				rainbow = {
+					enable = true,
+					-- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
+					extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+					max_file_lines = nil, -- Do not enable for files with more than n lines, int
+					-- colors = {}, -- table of hex strings
+					-- termcolors = {} -- table of colour name strings
+				},
+			}
+		end,
 		run = ':TSUpdate',
 	}
 
 	-- tetris lmao
 	use 'alec-gibson/nvim-tetris'
 
+	-- time tracking
+	use 'wakatime/vim-wakatime'
+
 	--
 	--
 	-- GUI
 	--
 	--
+
+	-- ui select
+	use {
+		'nvim-telescope/telescope-ui-select.nvim',
+		config = function()
+			require('telescope').load_extension 'ui-select'
+		end,
+	}
+
+	-- highlight colors
+	use {
+		'norcalli/nvim-colorizer.lua',
+		config = function()
+			require('colorizer').setup()
+		end,
+	}
 
 	-- startup
 	use {
@@ -43,11 +74,15 @@ return require('packer').startup(function(use)
 		'folke/todo-comments.nvim',
 		requires = 'nvim-lua/plenary.nvim',
 		config = function()
-			require('todo-comments').setup()
+			require('todo-comments').setup {
+				keywords = {
+					TODO = { icon = ' ', color = 'info', alt = { 'todo!()' } },
+				},
+			}
 			vim.api.nvim_set_keymap('n', '<leader>tq', '<cmd>TodoQuickFix<cr>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>tt', '<cmd>TodoTrouble<cr>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>ft', '<cmd>TodoTelescope<cr>', { noremap = true, silent = true })
-		end
+		end,
 	}
 
 	-- which key for commands
@@ -169,7 +204,12 @@ return require('packer').startup(function(use)
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true },
 		config = function()
-			require('lualine').setup()
+			require('lualine').setup {
+				-- options = {
+				-- 	component_separators = '|',
+				-- 	section_separators = { left = '', right = '' },
+				-- },
+			}
 		end,
 	}
 
@@ -181,8 +221,8 @@ return require('packer').startup(function(use)
 			require('bufferline').setup {}
 
 			-- keybinds
-			vim.api.nvim_set_keymap('n', '<leader>[', '<cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
-			vim.api.nvim_set_keymap('n', '<leader>]', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>]', '<cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>[', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, silent = true })
 		end,
 	}
 
@@ -222,12 +262,7 @@ return require('packer').startup(function(use)
 	}
 
 	-- zen mode
-	use {
-		'folke/zen-mode.nvim',
-		config = function()
-			require('zen-mode').setup()
-		end,
-	}
+	use 'Pocco81/TrueZen.nvim'
 	use {
 		'folke/twilight.nvim',
 		config = function()
@@ -252,6 +287,9 @@ return require('packer').startup(function(use)
 	-- rainbow parentheses
 	use {
 		'p00f/nvim-ts-rainbow',
+		requires = {
+			'nvim-treesitter/nvim-treesitter',
+		},
 		config = function()
 			require('nvim-treesitter.configs').setup {
 				rainbow = {
@@ -308,12 +346,12 @@ return require('packer').startup(function(use)
 	use 'machakann/vim-sandwich'
 
 	-- surround
-	use {
-		'blackCauldron7/surround.nvim',
-		config = function()
-			require('surround').setup { mappings_style = 'surround' }
-		end,
-	}
+	-- use {
+	-- 	'blackCauldron7/surround.nvim',
+	-- 	config = function()
+	-- 		require('surround').setup { mappings_style = 'surround' }
+	-- 	end,
+	-- }
 
 	-- open file at alst place
 	use {
@@ -364,6 +402,8 @@ return require('packer').startup(function(use)
 				exclude = {}, -- tabout will ignore these filetypes
 			}
 		end,
+		wants = { 'nvim-treesitter' }, -- or require if not used so far
+		after = { 'nvim-cmp' }, -- if a completion plugin is using tabs load it before
 	}
 
 	-- vscode ui style renamer
@@ -437,10 +477,10 @@ return require('packer').startup(function(use)
 		config = function()
 			require('hop').setup { keys = 'etovxqpdygfblzhckisuran' }
 			-- keybinds
-			vim.api.nvim_set_keymap('n', '<leader>j', '<cmd>HopWord<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>jw', '<cmd>HopWord<cr>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>jp', '<cmd>HopPattern<cr>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>j1', '<cmd>HopChar1<cr>', { noremap = true, silent = true })
-			vim.api.nvim_set_keymap('n', '<leader>j2', '<cmd>HopChar2<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>j', '<cmd>HopChar2<cr>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>jl', '<cmd>HopLine<cr>', { noremap = true, silent = true })
 		end,
 	}
@@ -700,7 +740,7 @@ return require('packer').startup(function(use)
 		ft = 'rust',
 		config = function()
 			vim.api.nvim_set_keymap('n', '<leader>rr', '<cmd>RustRun<cr>', { noremap = true })
-			vim.api.nvim_set_keymap('n', '<leader>rrr', '<cmd>RustRunnnables<cr>', { noremap = true })
+			vim.api.nvim_set_keymap('n', '<leader>rrr', '<cmd>RustRunnables<cr>', { noremap = true })
 			--
 			require('rust-tools').setup {
 				{

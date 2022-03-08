@@ -9,11 +9,13 @@ function abbrs
 	abbr -a yoinkmp3 youtube-dl -x --audio-format mp3 --prefer-ffmpeg
 	# cargo
 	abbr -a c cargo
-	abbr -a cb 'cargo build'
-	abbr -a cr 'cargo run'
-	abbr -a cc 'cargo check'
-	abbr -a ca 'cargo add'
+	abbr -a cb cargo build
+	abbr -a cr cargo run
+	abbr -a cc cargo check
+	abbr -a ca cargo add
 	abbr -a cl clear
+	abbr -a ct cargo test
+	abbr -a cto cargo test -- --show-output
 	# clears
 	abbr -a clf 'clear; neofetch'
 	abbr -a clg 'clear; fish_greeting'
@@ -34,12 +36,7 @@ function abbrs
 	abbr -a systrt 'systemctl start'
 	# todo
 	abbr -a t todo
-	abbr -a ta 'todo add'
-	abbr -a td 'todo done'
-	abbr -a te 'todo edit'
-	abbr -a tm 'todo move'
-	abbr -a tr 'todo remove'
-	abbr -a ts 'todo show'
-	abbr -a tsl 'todo select'
-	abbr -a tud 'todo undone'
+	abbr -a ts 'todo show -tD'
+	abbr -a tsf 'todo show -fdD'
+	abbr -a tsd 'todo show -tDd'
 end
