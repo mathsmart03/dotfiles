@@ -38,5 +38,5 @@ function abbrs
 	abbr -a t todo
 	abbr -a ts 'todo show -tD'
 	abbr -a tsf 'todo show -fdD'
-	abbr -a tsd 'todo show -tDd'
+	abbr -a tsd 'todo show -tDu'
 end

@@ -34,7 +34,7 @@ SETUVAR _fish_abbr_systop:systemctl\x20stop
 SETUVAR _fish_abbr_systrt:systemctl\x20start
 SETUVAR _fish_abbr_t:todo
 SETUVAR _fish_abbr_ts:todo\x20show\x20\x2dtD
-SETUVAR _fish_abbr_tsd:todo\x20show\x20\x2dtDd
+SETUVAR _fish_abbr_tsd:todo\x20show\x20\x2dtDu
 SETUVAR _fish_abbr_tsf:todo\x20show\x20\x2dfdD
 SETUVAR _fish_abbr_update:yay
 SETUVAR _fish_abbr_yeet:yay\x20\x2dRsn

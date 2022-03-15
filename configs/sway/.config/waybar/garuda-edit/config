@@ -138,7 +138,8 @@
 	},
 	"custom/todo": {
 		"format": "{}",
-		"exec": "todo st -Du"
+		"exec": "todo st -Du",
+		"interval": 60,
 	}
     // "custom/launcher": {
     //      "format":" ",
