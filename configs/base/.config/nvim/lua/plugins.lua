@@ -735,9 +735,7 @@ return require('packer').startup(function(use)
 
 	-- Adds extra functionality over rust analyzer
 	use {
-		-- 'simrat39/rust-tools.nvim',
-		'matze/rust-tools.nvim',
-		branch = 'fix-upstreamed-inlayhints',
+		'simrat39/rust-tools.nvim',
 		requires = { 'neovim/nvim-lspconfig' },
 		ft = 'rust',
 		config = function()
