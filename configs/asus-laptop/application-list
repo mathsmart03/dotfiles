@@ -1,5 +1,0 @@
-# space separated list of arch applications
-# command: pacman -Qen
-lm_sensors
-# aur applications
-# command: pacman -Qm

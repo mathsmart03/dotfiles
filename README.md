@@ -1,5 +1,8 @@
 # dotfiles
 
 ## Installation
-Install packages in application-list.
-Edit directories in make-symlinks and run.
+```sh
+git clone https://github.com/Rejyr/dotfiles.git
+cd dotfiles/
+./install.sh
+```
