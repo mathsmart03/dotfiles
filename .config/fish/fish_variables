@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export DOTFILES:/home/rejyr/dotfiles/
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GRIM_DEFAULT_DIR:/home/rejyr/Pictures/
 SETUVAR --export TMUX:\x1d

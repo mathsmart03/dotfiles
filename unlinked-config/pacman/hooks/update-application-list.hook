@@ -3,9 +3,9 @@ Type = Path
 Operation = Install
 Operation = Upgrade
 Operation = Remove
-Target = /
+Target = *
 
 [Action]
-Description = Update application list
+Description = Updating application list...
 When = PostTransaction
-Exec = /bin/sh -c 'pacman -Qen | awk '{print⋅$1}' > ~/dotfiles/pacman-list' 'pacman -Qm | awk '{print⋅$1}' > ~/dotfiles/aur-list'
+Exec = /bin/sh -c 'pacman -Qqen > $DOTFILES/pacman-list' 'pacman -Qm > $DOTFILES/aur-list'
