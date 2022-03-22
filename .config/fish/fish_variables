@@ -1,8 +1,10 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export CARGO_DIR:/home/rejyr/\x2ecargo/
 SETUVAR --export DOTFILES:/home/rejyr/dotfiles/
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GRIM_DEFAULT_DIR:/home/rejyr/Pictures/
+SETUVAR --export QT_QPA_PLATFORM:wayland
 SETUVAR --export TMUX:\x1d
 SETUVAR --export _JAVA_AWT_WM_NONREPARENTING:1
 SETUVAR __fish_initialized:3100

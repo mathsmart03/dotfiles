@@ -39,6 +39,6 @@ for file in $dir/*; do
 
     echo "Symlinking $dir/$file to $config/$file"
     ln -s $dir/$file $config/$file
-    # unlink $dir/$file/$file
+    unlink $dir/$file/$file
     echo
 done

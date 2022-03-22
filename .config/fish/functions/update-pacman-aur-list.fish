@@ -1,4 +1,4 @@
 function update-pacman-aur-list
-	pacman -Qqen ~/dotfiles/pacman-list
-	pacman -Qqm > ~/dotfiles/aur-list
+	pacman -Qqen > $DOTFILES/pacman-list
+	pacman -Qqm > $DOTFILES/aur-list
 end

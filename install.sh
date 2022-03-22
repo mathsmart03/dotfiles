@@ -1,6 +1,7 @@
 #! /bin/bash
 
-DOTFILES = ~/dotfiles
+export DOTFILES = /home/rejyr/dotfiles
+sh -c "export DOTFILES = /home/rejyr/dotfiles"
 
 # install yay
 cd ~

@@ -345,6 +345,8 @@ return require('packer').startup(function(use)
 	use 'jiangmiao/auto-pairs'
 	use 'machakann/vim-sandwich'
 
+	use 'davidgranstrom/nvim-markdown-preview'
+
 	-- surround
 	-- use {
 	-- 	'blackCauldron7/surround.nvim',

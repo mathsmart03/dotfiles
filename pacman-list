@@ -65,12 +65,14 @@ noto-fonts-cjk
 noto-fonts-emoji
 npm
 ntfs-3g
+obs-studio
 obsidian
 onefetch
 os-prober
 p7zip
 pacman
 pacman-contrib
+pandoc
 patch
 pavucontrol
 pkgconf
@@ -79,6 +81,7 @@ pulseaudio
 pulseaudio-bluetooth
 python-pip
 python-pywal
+qt5-wayland
 ripgrep
 sed
 slurp
@@ -98,6 +101,7 @@ unzip
 upower
 vivaldi
 waybar
+wf-recorder
 which
 wl-clipboard
 wmname

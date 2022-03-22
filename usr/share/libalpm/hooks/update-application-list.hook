@@ -8,4 +8,4 @@ Target = *
 [Action]
 Description = Updating application list...
 When = PostTransaction
-Exec = /bin/sh -c 'pacman -Qqen > $DOTFILES/pacman-list' 'pacman -Qm > $DOTFILES/aur-list'
+Exec = /bin/sh -c "pacman -Qqen > /home/rejyr/dotfiles/pacman-list" "pacman -Qqm > /home/rejyr/dotfiles/aur-list"
