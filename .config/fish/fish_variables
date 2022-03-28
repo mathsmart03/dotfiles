@@ -13,13 +13,14 @@ SETUVAR _fish_abbr_c:cargo
 SETUVAR _fish_abbr_ca:cargo\x20add
 SETUVAR _fish_abbr_cb:cargo\x20build
 SETUVAR _fish_abbr_cc:cargo\x20check
+SETUVAR _fish_abbr_ccl:cargo\x20clippy
 SETUVAR _fish_abbr_cl:clear
 SETUVAR _fish_abbr_clf:clear\x3b\x20neofetch
 SETUVAR _fish_abbr_clg:clear\x3b\x20fish_greeting
 SETUVAR _fish_abbr_clt:clear\x3b\x20todo
 SETUVAR _fish_abbr_cpustat:auto\x2dcpufreq\x20\x2d\x2dstats
 SETUVAR _fish_abbr_cr:cargo\x20run
-SETUVAR _fish_abbr_ct:cargo\x20test
+SETUVAR _fish_abbr_ct:cargo\x20nextest\x20run
 SETUVAR _fish_abbr_cto:cargo\x20test\x20\x2d\x2d\x20\x2d\x2dshow\x2doutput
 SETUVAR _fish_abbr_ls:exa\x20\x2dF
 SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp

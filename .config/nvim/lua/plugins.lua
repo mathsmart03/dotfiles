@@ -69,6 +69,9 @@ return require('packer').startup(function(use)
 		end,
 	}
 
+	-- display marks
+	use 'kshenoy/vim-signature'
+
 	-- todo comment
 	use {
 		'folke/todo-comments.nvim',
@@ -575,6 +578,9 @@ return require('packer').startup(function(use)
 				local servers = {
 					'pyright',
 					'sumneko_lua',
+					'grammarly',
+					'ltex',
+					'zeta_note'
 				}
 
 				-- install servers

@@ -84,6 +84,7 @@ python-pywal
 qt5-wayland
 ripgrep
 sed
+sl
 slurp
 speedcrunch
 stylua
