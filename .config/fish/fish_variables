@@ -25,6 +25,7 @@ SETUVAR _fish_abbr_cto:cargo\x20test\x20\x2d\x2d\x20\x2d\x2dshow\x2doutput
 SETUVAR _fish_abbr_ls:exa\x20\x2dF
 SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
 SETUVAR _fish_abbr_n:nvim
+SETUVAR _fish_abbr_nf:nvim\x20\x28fzf\x29
 SETUVAR _fish_abbr_nfet:neofetch
 SETUVAR _fish_abbr_pac:pacman
 SETUVAR _fish_abbr_restart:reboot

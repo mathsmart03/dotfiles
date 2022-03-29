@@ -484,8 +484,8 @@ return require('packer').startup(function(use)
 			-- keybinds
 			vim.api.nvim_set_keymap('n', '<leader>jw', '<cmd>HopWord<cr>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>jp', '<cmd>HopPattern<cr>', { noremap = true, silent = true })
-			vim.api.nvim_set_keymap('n', '<leader>j1', '<cmd>HopChar1<cr>', { noremap = true, silent = true })
-			vim.api.nvim_set_keymap('n', '<leader>j', '<cmd>HopChar2<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>j2', '<cmd>HopChar2<cr>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>j', '<cmd>HopChar1<cr>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>jl', '<cmd>HopLine<cr>', { noremap = true, silent = true })
 		end,
 	}
@@ -580,7 +580,7 @@ return require('packer').startup(function(use)
 					'sumneko_lua',
 					'grammarly',
 					'ltex',
-					'zeta_note'
+					'zeta_note',
 				}
 
 				-- install servers
@@ -681,19 +681,18 @@ return require('packer').startup(function(use)
 		requires = {
 			'hrsh7th/cmp-nvim-lsp',
 			'hrsh7th/cmp-nvim-lua',
-			'hrsh7th/cmp-vsnip',
 			'hrsh7th/cmp-path',
 			'hrsh7th/cmp-buffer',
 			'hrsh7th/cmp-calc',
 			'saadparwaiz1/cmp_luasnip',
-			'hrsh7th/vim-vsnip', -- snippet engine
+			'L3MON4D3/LuaSnip',
 		},
 		config = function()
 			local cmp = require 'cmp'
 			cmp.setup {
 				snippet = {
 					expand = function(args)
-						vim.fn['vsnip#anonymous'](args.body)
+						require('luasnip').lsp_expand(args.body)
 					end,
 				},
 				mapping = {
@@ -717,7 +716,6 @@ return require('packer').startup(function(use)
 					{ name = 'nvim_lsp' },
 					{ name = 'nvim_lua' },
 					{ name = 'luasnip' },
-					{ name = 'vsnip' },
 					{ name = 'path' },
 					{ name = 'buffer' },
 					{ name = 'calc' },
