@@ -8,6 +8,7 @@ SETUVAR --export QT_QPA_PLATFORM:wayland
 SETUVAR --export TMUX:\x1d
 SETUVAR --export _JAVA_AWT_WM_NONREPARENTING:1
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_bac:bacon\x20\x2dj\x20clippy
 SETUVAR _fish_abbr_blctl:bluetoothctl
 SETUVAR _fish_abbr_c:cargo
 SETUVAR _fish_abbr_ca:cargo\x20add
@@ -40,7 +41,7 @@ SETUVAR _fish_abbr_systrt:systemctl\x20start
 SETUVAR _fish_abbr_t:todo
 SETUVAR _fish_abbr_ts:todo\x20show\x20\x2dtD
 SETUVAR _fish_abbr_tsd:todo\x20show\x20\x2dtDu
-SETUVAR _fish_abbr_tsf:todo\x20show\x20\x2dfdD
+SETUVAR _fish_abbr_tsf:todo\x20show\x20\x2dfuD
 SETUVAR _fish_abbr_update:yay
 SETUVAR _fish_abbr_yeet:yay\x20\x2dRsn
 SETUVAR _fish_abbr_yoink:yay\x20\x2dS

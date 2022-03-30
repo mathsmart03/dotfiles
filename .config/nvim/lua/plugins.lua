@@ -45,12 +45,7 @@ return require('packer').startup(function(use)
 	--
 
 	-- ui select
-	use {
-		'nvim-telescope/telescope-ui-select.nvim',
-		config = function()
-			require('telescope').load_extension 'ui-select'
-		end,
-	}
+	use 'stevearc/dressing.nvim'
 
 	-- highlight colors
 	use {
@@ -336,6 +331,20 @@ return require('packer').startup(function(use)
 		event = 'BufWritePre',
 	}
 
+	-- jump to matching character
+	use {
+		'andymass/vim-matchup',
+		config = function()
+			require('nvim-treesitter.configs').setup {
+				matchup = {
+					enable = true, -- mandatory, false will disable the whole extension
+					disable = { 'c', 'ruby' }, -- optional, list of language that will be disabled
+					-- [options]
+				},
+			}
+		end,
+	}
+
 	-- comment
 	use {
 		'numToStr/Comment.nvim',
@@ -348,6 +357,7 @@ return require('packer').startup(function(use)
 	use 'jiangmiao/auto-pairs'
 	use 'machakann/vim-sandwich'
 
+	-- browser markdown preview
 	use 'davidgranstrom/nvim-markdown-preview'
 
 	-- surround
@@ -684,15 +694,22 @@ return require('packer').startup(function(use)
 			'hrsh7th/cmp-path',
 			'hrsh7th/cmp-buffer',
 			'hrsh7th/cmp-calc',
-			'saadparwaiz1/cmp_luasnip',
-			'L3MON4D3/LuaSnip',
+			-- luasnip
+			-- 'saadparwaiz1/cmp_luasnip',
+			-- 'L3MON4D3/LuaSnip',
+			-- ultisnips
+			'SirVer/ultisnips',
+			'quangnguyen30192/cmp-nvim-ultisnips',
 		},
 		config = function()
 			local cmp = require 'cmp'
 			cmp.setup {
 				snippet = {
 					expand = function(args)
-						require('luasnip').lsp_expand(args.body)
+						-- luasnip
+						-- require('luasnip').lsp_expand(args.body)
+						-- ultisnips
+						vim.fn['UltiSnips#Anon'](args.body)
 					end,
 				},
 				mapping = {
