@@ -7,7 +7,7 @@ SETUVAR --export GRIM_DEFAULT_DIR:/home/rejyr/Pictures/
 SETUVAR --export QT_QPA_PLATFORM:wayland
 SETUVAR --export TMUX:\x1d
 SETUVAR --export _JAVA_AWT_WM_NONREPARENTING:1
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_bac:bacon\x20\x2dj\x20clippy
 SETUVAR _fish_abbr_blctl:bluetoothctl
 SETUVAR _fish_abbr_c:cargo
@@ -76,5 +76,6 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/rejyr/Rust\x20Projects/todo/target/debug\x1e/home/rejyr/\x2ecargo/bin
 SETUVAR --export wmname:LG3D
