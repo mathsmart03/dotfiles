@@ -475,7 +475,7 @@ return require('packer').startup(function(use)
 						function()
 							return {
 								exe = 'rustfmt',
-								args = { '--emit=stdout' },
+								args = { '--emit=stdout', '--edition=2021' },
 								stdin = true,
 							}
 						end,
@@ -586,10 +586,11 @@ return require('packer').startup(function(use)
 			local lsp_installer = require 'nvim-lsp-installer'
 			lsp_installer.on_server_ready(function(server)
 				local servers = {
-					'pyright',
-					'sumneko_lua',
+					'clangd',
 					'grammarly',
 					'ltex',
+					'pyright',
+					'sumneko_lua',
 					'zeta_note',
 				}
 
@@ -695,11 +696,11 @@ return require('packer').startup(function(use)
 			'hrsh7th/cmp-buffer',
 			'hrsh7th/cmp-calc',
 			-- luasnip
-			-- 'saadparwaiz1/cmp_luasnip',
-			-- 'L3MON4D3/LuaSnip',
+			'saadparwaiz1/cmp_luasnip',
+			'L3MON4D3/LuaSnip',
 			-- ultisnips
-			'SirVer/ultisnips',
-			'quangnguyen30192/cmp-nvim-ultisnips',
+			-- 'SirVer/ultisnips',
+			-- 'quangnguyen30192/cmp-nvim-ultisnips',
 		},
 		config = function()
 			local cmp = require 'cmp'
@@ -707,9 +708,9 @@ return require('packer').startup(function(use)
 				snippet = {
 					expand = function(args)
 						-- luasnip
-						-- require('luasnip').lsp_expand(args.body)
+						require('luasnip').lsp_expand(args.body)
 						-- ultisnips
-						vim.fn['UltiSnips#Anon'](args.body)
+						-- vim.fn['UltiSnips#Anon'](args.body)
 					end,
 				},
 				mapping = {

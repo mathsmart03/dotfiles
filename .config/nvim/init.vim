@@ -44,3 +44,6 @@ set signcolumn=yes
 set updatetime=300
 " Show diagnostic popup on cursor hover
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
+
+" Auto format rust files
+" autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 200)

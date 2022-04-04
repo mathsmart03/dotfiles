@@ -4,6 +4,7 @@ SETUVAR --export CARGO_DIR:/home/rejyr/\x2ecargo/
 SETUVAR --export DOTFILES:/home/rejyr/dotfiles/
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GRIM_DEFAULT_DIR:/home/rejyr/Pictures/
+SETUVAR --export --path PATH:/home/rejyr/Programming/RustProjects/todo/target/debug\x1e/home/rejyr/\x2ecargo/bin\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl
 SETUVAR --export QT_QPA_PLATFORM:wayland
 SETUVAR --export TMUX:\x1d
 SETUVAR --export _JAVA_AWT_WM_NONREPARENTING:1
@@ -15,6 +16,7 @@ SETUVAR _fish_abbr_ca:cargo\x20add
 SETUVAR _fish_abbr_cb:cargo\x20build
 SETUVAR _fish_abbr_cc:cargo\x20check
 SETUVAR _fish_abbr_ccl:cargo\x20clippy
+SETUVAR _fish_abbr_cf:cargo\x20fmt
 SETUVAR _fish_abbr_cl:clear
 SETUVAR _fish_abbr_clf:clear\x3b\x20neofetch
 SETUVAR _fish_abbr_clg:clear\x3b\x20fish_greeting
@@ -77,5 +79,5 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/rejyr/Rust\x20Projects/todo/target/debug\x1e/home/rejyr/\x2ecargo/bin
+SETUVAR fish_user_paths:/home/rejyr/Programming/RustProjects/todo/target/debug\x1e/home/rejyr/\x2ecargo/bin
 SETUVAR --export wmname:LG3D
