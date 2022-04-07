@@ -578,6 +578,9 @@ return require('packer').startup(function(use)
 		end,
 	}
 
+	-- fish editing
+	use 'dag/vim-fish'
+
 	-- install lsp servers
 	use {
 		'williamboman/nvim-lsp-installer',

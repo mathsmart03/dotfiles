@@ -8,11 +8,12 @@ lua require('plugins')
 " Line Numbers
 :set number relativenumber
 
-" 4-wide tabs
+" 4-wide space tabs
 set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set noexpandtab
+set softtabstop=0
+set tabstop=8
+set expandtab
+set smarttab
 
 " map leader key to space
 let mapleader = ' '
