@@ -533,11 +533,148 @@ return require('packer').startup(function(use)
 		end,
 	}
 
-	-- debugging TODO: set up
+	-- debugging
 	use {
-		'rcarriga/nvim-dap-ui',
-		requires = { 'mfussenegger/nvim-dap' },
+		'mfussenegger/nvim-dap',
+		requires = { 'rcarriga/nvim-dap-ui', 'Pocco81/DAPInstall.nvim', 'theHamsta/nvim-dap-virtual-text' },
+		config = function()
+			vim.api.nvim_set_keymap(
+				'n',
+				'<F4>',
+				"<cmd>lua require('dapui').toggle()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<F5>',
+				"<cmd>lua require('dap').toggle_breakpoint()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<F9>',
+				"<cmd>lua require('dap').continue()<CR>",
+				{ noremap = true, silent = true }
+			)
+
+			vim.api.nvim_set_keymap(
+				'n',
+				'<F1>',
+				"<cmd>lua require('dap').step_over()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<F2>',
+				"<cmd>lua require('dap').step_into()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<F3>',
+				"<cmd>lua require('dap').step_out()<CR>",
+				{ noremap = true, silent = true }
+			)
+
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dsc',
+				"<cmd>lua require('dap').continue()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dsv',
+				"<cmd>lua require('dap').step_over()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dsi',
+				"<cmd>lua require('dap').step_into()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dso',
+				"<cmd>lua require('dap').step_out()<CR>",
+				{ noremap = true, silent = true }
+			)
+
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dhh',
+				"<cmd>lua require('dap.ui.variables').hover()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'v',
+				'<Leader>dhv',
+				"<cmd>lua require('dap.ui.variables').visual_hover()<CR>",
+				{ noremap = true, silent = true }
+			)
+
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>duh',
+				"<cmd>lua require('dap.ui.widgets').hover()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>duf',
+				"<cmd>lua local widgets=require('dap.ui.widgets');widgets.centered_float(widgets.scopes)<CR>",
+				{ noremap = true, silent = true }
+			)
+
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dro',
+				"<cmd>lua require('dap').repl.open()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>drl',
+				"<cmd>lua require('dap').repl.run_last()<CR>",
+				{ noremap = true, silent = true }
+			)
+
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dbc',
+				"<cmd>lua require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dbm',
+				"<cmd>lua require('dap').set_breakpoint({ nil, nil, vim.fn.input('Log point message: ') })<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dbt',
+				"<cmd>lua require('dap').toggle_breakpoint()<CR>",
+				{ noremap = true, silent = true }
+			)
+
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>dc',
+				"<cmd>lua require('dap.ui.variables').scopes()<CR>",
+				{ noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				'n',
+				'<Leader>di',
+				"<cmd>lua require('dapui').toggle()<CR>",
+				{ noremap = true, silent = true }
+			)
+		end,
 	}
+
+	use { 'rcarriga/vim-ultest', requires = { 'vim-test/vim-test' }, run = ':UpdateRemotePlugins' }
 
 	--
 	--
