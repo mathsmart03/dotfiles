@@ -38,6 +38,18 @@ return require('packer').startup(function(use)
 	-- time tracking
 	use 'wakatime/vim-wakatime'
 
+	-- mini
+	use {
+		'echasnovski/mini.nvim',
+		branch = 'stable',
+		config = function()
+			-- surround
+			require('mini.surround').setup()
+			-- starting screen
+			require('mini.starter').setup()
+		end,
+	}
+
 	--
 	--
 	-- GUI
@@ -52,15 +64,6 @@ return require('packer').startup(function(use)
 		'norcalli/nvim-colorizer.lua',
 		config = function()
 			require('colorizer').setup()
-		end,
-	}
-
-	-- startup
-	use {
-		'goolord/alpha-nvim',
-		requires = { 'kyazdani42/nvim-web-devicons' },
-		config = function()
-			require('alpha').setup(require('alpha.themes.startify').opts)
 		end,
 	}
 
@@ -119,6 +122,9 @@ return require('packer').startup(function(use)
 		requires = {
 			'nvim-treesitter/nvim-treesitter',
 		},
+                config = function ()
+                    require('treesitter-context').setup()
+                end
 	}
 
 	-- tree view for symbols
@@ -198,14 +204,15 @@ return require('packer').startup(function(use)
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true },
 		config = function()
-			require('lualine').setup {
-				-- options = {
-				-- 	component_separators = '|',
-				-- 	section_separators = { left = '', right = '' },
-				-- },
-			}
+			require('lualine').setup {}
 		end,
 	}
+	-- use {
+	-- 	'feline-nvim/feline.nvim',
+	-- 	config = function()
+	-- 		require('feline').setup {}
+	-- 	end,
+	-- }
 
 	-- tabline
 	use {
@@ -252,15 +259,6 @@ return require('packer').startup(function(use)
 		'karb94/neoscroll.nvim',
 		config = function()
 			require('neoscroll').setup()
-		end,
-	}
-
-	-- zen mode
-	use 'Pocco81/TrueZen.nvim'
-	use {
-		'folke/twilight.nvim',
-		config = function()
-			require('twilight').setup()
 		end,
 	}
 
@@ -351,20 +349,11 @@ return require('packer').startup(function(use)
 
 	-- auto-pair
 	use 'jiangmiao/auto-pairs'
-	use 'machakann/vim-sandwich'
 
 	-- browser markdown preview
 	use 'davidgranstrom/nvim-markdown-preview'
 
-	-- surround
-	-- use {
-	-- 	'blackCauldron7/surround.nvim',
-	-- 	config = function()
-	-- 		require('surround').setup { mappings_style = 'surround' }
-	-- 	end,
-	-- }
-
-	-- open file at alst place
+	-- open file at last place
 	use {
 		'ethanholz/nvim-lastplace',
 		config = function()
@@ -542,7 +531,6 @@ return require('packer').startup(function(use)
 		config = function()
 			require('telescope').load_extension 'dap'
 			require('dapui').setup()
-			require('todo-comments').setup {}
 
 			local dap = require 'dap'
 

@@ -3,6 +3,7 @@ auto-cpufreq==1.9.2
 beautifulsoup4==4.10.0
 btrfsutil==5.16.2
 CacheControl==0.12.6
+certifi==2021.10.8
 cffi==1.15.0
 chardet==4.0.0
 click==8.1.2
@@ -61,5 +62,5 @@ urllib3==1.26.9
 webencodings==0.5.1
 websockets==10.2
 youtube-dl==2021.12.17
-yt-dlp==2022.3.8.1
+yt-dlp==2022.4.8
 ytmusicapi==0.21.0
