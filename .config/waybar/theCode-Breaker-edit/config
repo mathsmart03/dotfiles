@@ -1,0 +1,131 @@
+{
+	"layer": "top",
+        "position": "bottom", // Waybar position (top|bottom|left|right)
+        "height": 25,
+	"modules-left": ["custom/launcher","cpu","temperature","memory","disk","network","tray","sway/mode"],
+	"modules-center": ["sway/workspaces"],
+	"modules-right": ["custom/updates","backlight","pulseaudio","clock","battery","custom/power"],
+
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+                "format-muted":"muted ",
+		/* "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle", */
+                "on-click": "pavucontrol",
+		"format-icons": {
+                    "headphones": "",
+                    "handsfree": "",
+                    "headset": "",
+                    "phone": "",
+                    "portable": "",
+                    "car": "",
+		    "default": ["", "", ""]
+		}
+	},
+
+        "sway/workspaces": {
+            "disable-scroll": true,
+            "all-outputs": false,
+            "format": "{icon}",
+            "format-icons": {
+    		"3": "3",
+    		"4": "4",
+    		"5": "5",
+    		"6": "6",
+    		"7": "7",
+    		"8": "8",
+    		"9": "9",
+    		"10": "10",
+            }
+        },
+        "sway/mode": {
+            "format": "<span style=\"italic\">{}</span>"
+        },
+        "sway/window": {
+            "format": "{}",
+            	"icon": false
+        },
+	"network": {
+                "format": "⚠ Disabled",
+                "format-wifi": " {essid}",
+                "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
+                "format-disconnected": "⚠ Disconnected",
+                "on-click": "alacritty -e nmcli",
+		"tooltip": false,
+	},
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+                "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5"
+	},
+        "battery": {
+            "states": {
+                "good": 95,
+                "warning": 30,
+                "critical": 20
+            },
+            "format": "{icon}  {capacity}%",
+            "format-charging": " {capacity}%",
+            "format-plugged": " {capacity}%",
+            "format-alt": "{time} {icon}",
+            "format-icons": ["", "", "", "", ""]
+        },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+        "clock": {
+            "tooltip-format": "{:%A %B %d %Y | %H:%M}",
+            // "format": " {:%a %d %b  %I:%M %p}",	//12 hour format
+            "format": " {:%a %d %b  %H:%M}",	//24 hour format
+            "format-alt": " {:%d/%m/%Y  %H:%M:%S}",
+            // "timezones": [ "Kolkata" ],
+            // "max-length": 200
+            "interval": 1
+        },
+        "cpu": {
+            "interval": 15,
+            "format": " {}%",
+            "max-length": 10
+        },
+        "memory": {
+            "interval": 30,
+            "format": " {}%",
+            "max-length": 10
+        },
+        "disk": {
+            "interval": 5,
+            "format": "  {percentage_used:2}%",
+            "path": "/"
+        },
+
+        "temperature": {
+            // "thermal-zone": 2,
+            // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+            "critical-threshold": 80,
+            // "format-critical": "{temperatureC}°C ",
+            "format": "{temperatureC}°C "
+        },
+        "custom/launcher":{
+            "format": " ",
+            "on-click": "wofi --show drun",
+            "on-click-right": "killall wofi",
+	    "tooltip": false,
+        },
+        "custom/power":{
+            "format": " ",
+            "on-click": "bash ~/.config/wofi/leave.sh",
+	    "tooltip": false,
+        },
+        "custom/updates":{
+            "format": "{} Update(s)",
+            "interval": 7200,                     // every two hours
+            "exec": "checkupdates | wc -l",
+            "exec-if": "exit 0",                  // always run; consider advanced run conditions
+            "on-click": "alacritty -e yay; pkill -SIGRTMIN+8 waybar",
+	    "tooltip": false,
+        },
+}

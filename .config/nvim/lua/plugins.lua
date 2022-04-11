@@ -122,9 +122,9 @@ return require('packer').startup(function(use)
 		requires = {
 			'nvim-treesitter/nvim-treesitter',
 		},
-                config = function ()
-                    require('treesitter-context').setup()
-                end
+		config = function()
+			require('treesitter-context').setup()
+		end,
 	}
 
 	-- tree view for symbols
@@ -760,6 +760,7 @@ return require('packer').startup(function(use)
 			lsp_installer.on_server_ready(function(server)
 				local servers = {
 					'clangd',
+					'cssls',
 					'grammarly',
 					'ltex',
 					'pyright',
