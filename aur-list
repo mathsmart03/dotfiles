@@ -1,4 +1,6 @@
+ansiweather
 auto-cpufreq
+cava
 cbonsai
 clion
 clion-cmake
@@ -20,4 +22,5 @@ python-spotdl
 python-spotipy
 python-ytmusicapi
 tint-git
+tty-clock-git
 yay

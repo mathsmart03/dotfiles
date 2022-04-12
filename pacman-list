@@ -16,6 +16,7 @@ bottom
 brightnessctl
 btop
 cmatrix
+cowsay
 cups
 dhcpcd
 dialog
@@ -54,6 +55,7 @@ libtool
 linux
 linux-firmware
 lldb
+lolcat
 m4
 make
 man-db

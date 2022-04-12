@@ -2,7 +2,7 @@
 	"layer": "top",
         "position": "bottom", // Waybar position (top|bottom|left|right)
         "height": 25,
-	"modules-left": ["custom/launcher","cpu","temperature","memory","disk","network","tray","sway/mode"],
+	"modules-left": ["custom/launcher","cpu","temperature","memory","disk","network","custom/weather","tray","sway/mode"],
 	"modules-center": ["sway/workspaces"],
 	"modules-right": ["custom/updates","backlight","pulseaudio","clock","battery","custom/power"],
 
@@ -101,7 +101,6 @@
             "format": "  {percentage_used:2}%",
             "path": "/"
         },
-
         "temperature": {
             // "thermal-zone": 2,
             // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -109,9 +108,15 @@
             // "format-critical": "{temperatureC}°C ",
             "format": "{temperatureC}°C "
         },
+        "custom/weather":{
+            "format": "{}",
+            "interval": 86400, // daily
+            "exec": "~/dotfiles/.config/waybar/weather.sh",
+            "tooltip": false,
+        },
         "custom/launcher":{
             "format": " ",
-            "on-click": "wofi --show drun",
+            "on-click": "wofi --show drun -I",
             "on-click-right": "killall wofi",
 	    "tooltip": false,
         },
