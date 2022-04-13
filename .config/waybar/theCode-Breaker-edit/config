@@ -12,7 +12,6 @@
 		"format": "{icon} {volume}%",
                 "format-muted":"muted ",
 		/* "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle", */
-                "on-click": "pavucontrol",
 		"format-icons": {
                     "headphones": "",
                     "handsfree": "",
@@ -81,7 +80,7 @@
             "tooltip-format": "{:%A %B %d %Y | %H:%M}",
             // "format": " {:%a %d %b  %I:%M %p}",	//12 hour format
             "format": " {:%a %d %b  %H:%M}",	//24 hour format
-            "format-alt": " {:%d/%m/%Y  %H:%M:%S}",
+            "format-alt": " {:%d-%m-%Y  %H:%M:%S}",
             // "timezones": [ "Kolkata" ],
             // "max-length": 200
             "interval": 1

@@ -78,11 +78,11 @@ pacman
 pacman-contrib
 pandoc
 patch
-pavucontrol
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
 pkgconf
 playerctl
-pulseaudio
-pulseaudio-bluetooth
 python-pip
 python-pywal
 qt5-wayland
@@ -112,6 +112,7 @@ which
 wl-clipboard
 wmname
 wofi
+xdg-desktop-portal-wlr
 youtube-dl
 zellij
 zoxide
