@@ -20,4 +20,5 @@ set -g theme_display_git_untracked yes
 set -g theme_display_git_dirty yes
 set -g theme_display_nvm yes
 set -g theme_display_virtualenv yes
-set -g theme_color_scheme zenburn
+set -g theme_color_scheme nord
+set -g theme_date_format "+%a %d %b %Y | %H:%M:%S"
