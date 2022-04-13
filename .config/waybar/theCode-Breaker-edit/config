@@ -9,6 +9,7 @@
 	"pulseaudio": {
 		"tooltip": false,
 		"scroll-step": 5,
+                "on-click": "pavucontrol",
 		"format": "{icon} {volume}%",
                 "format-muted":"muted ",
 		/* "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle", */

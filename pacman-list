@@ -78,6 +78,7 @@ pacman
 pacman-contrib
 pandoc
 patch
+pavucontrol
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
