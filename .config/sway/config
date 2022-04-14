@@ -26,6 +26,9 @@ gaps outer 5
 # disable window titlebar
 default_border pixel 2
 
+# start notifications (dunst)
+exec dunst
+
 # xdg_desktop_portal setup
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
