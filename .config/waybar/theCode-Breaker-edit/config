@@ -2,9 +2,9 @@
 	"layer": "top",
         "position": "bottom", // Waybar position (top|bottom|left|right)
         "height": 25,
-	"modules-left": ["custom/launcher","cpu","temperature","memory","disk","network","custom/weather","tray","sway/mode"],
+	"modules-left": ["custom/launcher","cpu","temperature","memory","disk","network","custom/keyboard-layout","tray","sway/mode"],
 	"modules-center": ["sway/workspaces"],
-	"modules-right": ["custom/updates","backlight","pulseaudio","clock","battery","custom/power"],
+	"modules-right": ["custom/weather","custom/updates","backlight","pulseaudio","clock","battery","custom/power"],
 
 	"pulseaudio": {
 		"tooltip": false,
@@ -122,15 +122,24 @@
         },
         "custom/power":{
             "format": " ",
-            "on-click": "bash ~/.config/wofi/leave.sh",
+            "on-click": "~/.config/wofi/leave.sh",
 	    "tooltip": false,
         },
         "custom/updates":{
-            "format": "{} Update(s)",
+            "format": " {}",
             "interval": 7200,                     // every two hours
             "exec": "checkupdates | wc -l",
             "exec-if": "exit 0",                  // always run; consider advanced run conditions
             "on-click": "alacritty -e yay; pkill -SIGRTMIN+8 waybar",
 	    "tooltip": false,
+        },
+        "custom/keyboard-layout": {
+            "exec": "~/.config/waybar/keyboard-layout.sh",
+            // Interval set only as a fallback, as te value is updated by signal
+            "interval": 30,
+            "format": "  {}", // Icon: keyboard
+            // Signal sent by Sway key binding (~/.config/sway/key-bindings)
+            "signal": 1, // SIGHUP
+            "tooltip": false,
         },
 }
