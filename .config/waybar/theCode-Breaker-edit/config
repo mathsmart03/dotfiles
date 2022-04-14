@@ -140,6 +140,7 @@
             "format": "  {}", // Icon: keyboard
             // Signal sent by Sway key binding (~/.config/sway/key-bindings)
             "signal": 1, // SIGHUP
+            "on-click": "~/.config/waybar/toggle-keyboard-layout.sh",
             "tooltip": false,
         },
 }
